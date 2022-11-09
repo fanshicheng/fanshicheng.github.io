@@ -1,0 +1,1922 @@
+<!DOCTYPE HTML>
+<html lang="Chinese">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="C#, 博客">
+    <meta name="description" content="In me the tiger sniffs the rose.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>C# | 凡诚</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+
+   <style>
+    body{
+       background-image: url(https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/comment_bg.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">凡诚</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>主页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>文章</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于我</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/about">
+          
+          <i class="fas fa-user-circle" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>我的信息</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/contact">
+          
+          <i class="fas fa-comments" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>留言板</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/friends">
+          
+          <i class="fas fa-address-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>友链</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/comment_bg.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">凡诚</div>
+        <div class="logo-desc">
+            
+            In me the tiger sniffs the rose.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			主页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			文章
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-user-circle"></i>
+			
+			关于我
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/about " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-user-circle" style="position: absolute;left:50px" ></i>
+			      
+		          <span>我的信息</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/contact " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-comments" style="position: absolute;left:50px" ></i>
+			      
+		          <span>留言板</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/friends " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-address-book" style="position: absolute;left:50px" ></i>
+			      
+		          <span>友链</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">C#</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C#</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/" class="post-category">
+                                后端技术
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2021-11-08
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-11-08
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    4k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    15 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="C"><a href="#C" class="headerlink" title="C#"></a>C#</h1><h2 id="1-NET框架"><a href="#1-NET框架" class="headerlink" title="1  .NET框架"></a>1  .NET框架</h2><blockquote>
+<p>支持传统的window应用系统和web应用系统开发，还可以支持跨平台移动开发和云开发。</p>
+</blockquote>
+<h3 id="1-1-net框架结构"><a href="#1-1-net框架结构" class="headerlink" title="1.1 net框架结构"></a>1.1 net框架结构</h3><blockquote>
+<p>.net框架体系结构由一下四个主要部分组成：</p>
+<p>1.公共语言进行时（clr）:公共语言进行时时.net框架应用程序的执行引擎。clr负责内存分配，启动和删除线程和进程，实施安全性策略，同时满足当前组件对其他组件的需要。</p>
+<p>2.基础类库：.net框架为开发人员提供的一个统一的，面向对象的，层次化的，可扩展的类库集（API）。在.NET框架上各种语言都支持使用这个类库。</p>
+<p>3.ADO.NET数据访问：它是一组用于和数据源交互的面向对象的类库。实现了ADO无法实现的三重需求。</p>
+<p>4.活动服务器页面（c#）：c#提供了web应用模型，该模型由一组控件和一个基本结构组成。C#使WEB应用程序的构建变得十分容易。</p>
+</blockquote>
+<h3 id="1-2-net框架的优点"><a href="#1-2-net框架的优点" class="headerlink" title="1.2 .net框架的优点"></a>1.2 .net框架的优点</h3><blockquote>
+<p>统一的程序设计模式：提供了跨语言的面向对象的同意程序设计模式，这种模式可以用于读写文件，数据库访问。</p>
+<p>跨平台应用：应用程序可以运行在任意被clr支持的系统中。</p>
+<p>多语言集成：允许多语言进行集成。可以在一种语言中使用另一种语言的类。</p>
+<p>自动资源管理：crl会对应用程序所使用的资源进行自动检测，释放不需要的资源。</p>
+<p>轻松部署：轻松生成安装文件。</p>
+</blockquote>
+<hr>
+<h3 id="1-3-net的术语"><a href="#1-3-net的术语" class="headerlink" title="1.3 .net的术语"></a>1.3 .net的术语</h3><blockquote>
+<p>CLR：公共语言运行时，处理加载程序，运行程序的代码，以及在提供支持服务的代码。</p>
+<p>托管代码：.net中的所有代码都是托管代码，它们都是以运行库为目的的。</p>
+<p>IL：中间语言，编译器把预先写好的代码编译为中间语言，il可以快速地编译为内部机器代码。</p>
+<p>.net基类:是一个扩展的类库。它包含预先写好的代码，执行windows上的各种任务。</p>
+<p>CLS:公共语言进行时，这是确保语言在任何语言中都访问的最小标准的集合，所有用于.net的编译器都应支持CLS.</p>
+<p>JIT：just-in-time编译，用于表达执行编译过程的最后阶段，即从中间语言转换为内部机器码。</p>
+</blockquote>
+<h3 id="1-4-应用类型"><a href="#1-4-应用类型" class="headerlink" title="1.4 应用类型"></a>1.4 应用类型</h3><blockquote>
+<p>1.windows窗体应用</p>
+<p>2.控制台应用程序  //DOS环境下的命令行</p>
+<p>3.ASP.NET WEB应用程序</p>
+<p>4.类库        //类库通用</p>
+</blockquote>
+<hr>
+<h2 id="C-基础"><a href="#C-基础" class="headerlink" title="C#基础"></a>C#基础</h2><h3 id="1-主体框架"><a href="#1-主体框架" class="headerlink" title="1  主体框架"></a>1  主体框架</h3><blockquote>
+<p>命名空间 &gt; 类 &gt; 方法</p>
+<p>// 单行注释</p>
+<p>/* */ 多行注释</p>
+<p>Console.WriteLine(“”);向控制台输出（默认换行）</p>
+<p>Console.Write(“”);向控制台输出（默认不换行）</p>
+<p><code>Main()</code>过程使程序的主过程。当程序执行时会从Main()开始。</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">using System;   &#x2F;&#x2F;引入包
+namespace  项目名&#123; 				&#x2F;&#x2F;命名空间
+    class Progrram &#123;              &#x2F;&#x2F;类名
+    	static void Main()&#123;		  &#x2F;&#x2F;主函数（主方法）
+            Console.WriteLine(&quot;&quot;);
+            Console.Write(&quot;&quot;);
+        &#125;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<hr>
+<h3 id="2-数据类型"><a href="#2-数据类型" class="headerlink" title="2  数据类型"></a>2  数据类型</h3><blockquote>
+<p>C#是一种强类型语言。</p>
+<p>C#的数据类型包括两类：引用类型和值类型</p>
+<p>值类型：整型，浮点型，小数型，布尔型，结构，枚举，字符型。</p>
+<p>引用类型：类类型，接口类型，委托类型，数组类型。</p>
+<p>引用类型默认值为：NULL</p>
+</blockquote>
+<h4 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h4><blockquote>
+<p>直接包含；short /  ushort (凡是s开头即为有符号，u开头即为无符号。)</p>
+<p>​        sbyte /  byte</p>
+<p>​        int   /  uint</p>
+<pre><code>    long  /  ulong
+</code></pre>
+</blockquote>
+<hr>
+<h4 id="字符型"><a href="#字符型" class="headerlink" title="字符型"></a>字符型</h4><blockquote>
+<p>char:一个char类型包含<code>2个字节</code>(c中为1个),有三种定义方式。</p>
+<p>char类型和ushort类型可以无损失转换。</p>
+<p>byte存储占一个字节。</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">char a &#x3D; &#39;A&#39;
+char a &#x3D; &#39;\xoo64&#39; &#x2F;&#x2F;十六进制
+char a &#x3D; &#39;\u0065&#39; &#x2F;&#x2F;Unicode编码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+<hr>
+<h4 id="浮点型"><a href="#浮点型" class="headerlink" title="浮点型"></a>浮点型</h4><blockquote>
+<p>浮点型包括：double ，float</p>
+<p>float定义时需要在赋值后加F/f。</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">double a &#x3D; 1.111;
+float b &#x3D; 1.11f &#x2F;&#x2F; float定义时需要在赋值后加F&#x2F;f。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<hr>
+<h4 id="小数型"><a href="#小数型" class="headerlink" title="小数型"></a>小数型</h4><blockquote>
+<p>decimal能存储的小数位数非常多，在定义初始化的时候，<code>需要在赋值之后加m</code>.</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">&#x2F;&#x2F;在定义初始化的时候，需要在赋值之后加m
+decimal i &#x3D; 1.222m<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<hr>
+<h4 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h4><blockquote>
+<p>c#中有一些字符不能直接输出如：单引号和双引号，空格，反斜杠，可以采取转义字符的形式进行显示。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>转义字符</th>
+<th>字符</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\0</td>
+<td>空字符</td>
+<td></td>
+</tr>
+<tr>
+<td>\a</td>
+<td>叹号</td>
+<td></td>
+</tr>
+<tr>
+<td>\b</td>
+<td>退格</td>
+<td></td>
+</tr>
+<tr>
+<td>\f</td>
+<td>换页</td>
+<td></td>
+</tr>
+<tr>
+<td>\r</td>
+<td>回车</td>
+<td></td>
+</tr>
+<tr>
+<td>\n</td>
+<td>换行</td>
+<td></td>
+</tr>
+<tr>
+<td>\t</td>
+<td>水平tab</td>
+<td></td>
+</tr>
+<tr>
+<td>\v</td>
+<td>垂直yab</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="3-变量和常量"><a href="#3-变量和常量" class="headerlink" title="3  变量和常量"></a>3  变量和常量</h3><blockquote>
+<p>c#允许用变量和常量存储数据。</p>
+</blockquote>
+<h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><blockquote>
+<p>变量时程序运行中临时来存储数据的内存空间，在声明时需要指明其名称和数据类型。</p>
+<p><code>变量名必须以字母开头</code>变量名必须只包含字母，_下划线，数字，不能和c#中的关键字同名，不能和C#中的函数库名相同。</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">&#x2F;&#x2F;声明之后再初始化：
+float a ;&#x2F;&#x2F;变量类型  变量名 ；
+
+a &#x3D; 1.1f	; &#x2F;&#x2F;变量名 &#x3D; 数值；
+    
+&#x2F;&#x2F;声明的同时初始化
+float a&#x3D; 1.1 ;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h4><blockquote>
+<p>在程序运行过程中不会发生改变的量称为常量，使用const关键字来定义。只要定义就必须初始化。</p>
+<p>常量和变量最大的区别就是：变量的值可以不断该改变，常量的值一但定义就不能改变，如果给一个已经定义的常量赋值，就会发生错误。</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">&#x2F;&#x2F;使用const关键字来定义只要定义就必须初始化。
+&#x2F;&#x2F;const 常量类型 常量名 &#x3D; 初始化值；
+const float a &#x3D; 1.2f;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h3 id="4-运算符"><a href="#4-运算符" class="headerlink" title="4 运算符"></a>4 运算符</h3><blockquote>
+<p>运算符是一个符号，用来操作一个或者多个表达式。</p>
+</blockquote>
+<h4 id="4-1-算数运算符"><a href="#4-1-算数运算符" class="headerlink" title="4.1 算数运算符"></a>4.1 算数运算符</h4><table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">+</td>
+<td>加-两个对象相加</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td>减-得到负数或是一个数减去另一个数</td>
+</tr>
+<tr>
+<td align="center">*</td>
+<td>乘-两个数相乘或是返回一个被重复若干次的字符串</td>
+</tr>
+<tr>
+<td align="center">/</td>
+<td>除-X除以Y</td>
+</tr>
+<tr>
+<td align="center">%</td>
+<td>取模-返回除法的余数</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td></td>
+</tr>
+</tbody></table>
+<h4 id="4-2-比较运算符"><a href="#4-2-比较运算符" class="headerlink" title="4.2 比较运算符"></a>4.2 比较运算符</h4><table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">==</td>
+<td>等于-比较对象是否相等</td>
+</tr>
+<tr>
+<td align="center">!=</td>
+<td>不等于-比较两个对象是否不相等</td>
+</tr>
+<tr>
+<td align="center">&gt;</td>
+<td>大于-返回X是否大于Y</td>
+</tr>
+<tr>
+<td align="center">&lt;</td>
+<td>小于-返回X是否小于Y(所有比较运算符返回1为真，返回0表示假)</td>
+</tr>
+<tr>
+<td align="center">&gt;=</td>
+<td>大于等于-返回X是否大于等于Y</td>
+</tr>
+<tr>
+<td align="center">&lt;=</td>
+<td>小于等于-返回X是否小于等于Y</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td></td>
+</tr>
+</tbody></table>
+<h4 id="4-3-逻辑运算符"><a href="#4-3-逻辑运算符" class="headerlink" title="4.3 逻辑运算符"></a>4.3 逻辑运算符</h4><table>
+<thead>
+<tr>
+<th></th>
+<th align="center">运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;&amp;</td>
+<td align="center">and</td>
+<td>布尔”与”-</td>
+</tr>
+<tr>
+<td>！</td>
+<td align="center">or</td>
+<td>布尔”或”-</td>
+</tr>
+<tr>
+<td>||</td>
+<td align="center">not</td>
+<td>布尔”非”-</td>
+</tr>
+</tbody></table>
+<h3 id="5-流程控制语句"><a href="#5-流程控制语句" class="headerlink" title="5  流程控制语句"></a>5  流程控制语句</h3><blockquote>
+<p>通过使用各种流程控制语句来控制语句的执行循环。</p>
+</blockquote>
+<h5 id="5-1-分支语句"><a href="#5-1-分支语句" class="headerlink" title="5.1 分支语句"></a>5.1 分支语句</h5><blockquote>
+<p>分支语句分为if ,swich语句</p>
+</blockquote>
+<p><img src="https://www.runoob.com/wp-content/uploads/2015/12/if.png"></p>
+<p>if语句</p>
+<blockquote>
+<p>一个 <strong>if 语句</strong> 由一个布尔表达式后跟一个或多个语句组成。</p>
+</blockquote>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/04/if_statement.jpg"></p>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">static void Main(string[] args)
+        &#123;
+          if(判断语句)&#123;    
+          语句；
+          &#125;
+          else if(判断语句)&#123;
+          语句；  
+          &#125;    
+          else&#123;
+          语句；    
+          &#125;    	
+        &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>switch语句</p>
+<blockquote>
+<p>一个 <strong>switch</strong> 语句允许测试一个变量等于多个值时的情况。每个值称为一个 case，且被测试的变量会对每个 <strong>switch case</strong> 进行检查。</p>
+</blockquote>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/04/switch_statement.jpg"></p>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">switch (变量)
+            &#123;
+                case &#39;A&#39;:
+                    语句；
+                    break;
+                case &#39;B&#39;:
+                case &#39;C&#39;:
+                    语句；
+                    break;
+                case &#39;D&#39;:
+                    语句；
+                    break;
+                case &#39;F&#39;:
+                   语句；
+                    break;
+                default:
+                    语句；
+                    break;
+            &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h5 id="5-2-循环语句"><a href="#5-2-循环语句" class="headerlink" title="5.2 循环语句"></a>5.2 循环语句</h5><blockquote>
+<p>有的时候，可能需要多次执行同一块代码。一般情况下，语句是顺序执行的：函数中的第一个语句先执行，接着是第二个语句，依此类推。</p>
+</blockquote>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/04/loop_architecture.jpg"></p>
+<p>while循环</p>
+<blockquote>
+<p>只要给定的条件为真，C# 中的 <strong>while</strong> 循环语句会重复执行一个目标语句。</p>
+</blockquote>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/04/cpp_while_loop.png"></p>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">while (判断语句)
+      &#123;
+	语句
+       &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>dowhile循环</p>
+<blockquote>
+<p><strong>do…while</strong> 循环是在循环的尾部检查它的条件。</p>
+<p><strong>do…while</strong> 循环与 while 循环类似，但是 do…while 循环会确保至少执行一次循环。</p>
+</blockquote>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/04/cpp_do_while_loop.jpg"></p>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">do
+    &#123;
+       语句；     
+     &#125; while (a &lt; 20);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>for循环</p>
+<blockquote>
+<p>一个 <strong>for</strong> 循环是一个允许您编写一个执行特定次数的循环的重复控制结构。</p>
+</blockquote>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/04/cpp_for_loop.png"></p>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">for ( init; condition; increment )
+&#123;
+   语句;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="6-数组"><a href="#6-数组" class="headerlink" title="6  数组"></a>6  数组</h3><blockquote>
+<p>数组和是具有相同数据类型的数据集合。数组中的每个数据称为数组元素，可以使用元素的位置索引号来访问数组元素。</p>
+</blockquote>
+<h4 id="6-1-数组声明"><a href="#6-1-数组声明" class="headerlink" title="6.1 数组声明"></a>6.1 数组声明</h4><blockquote>
+<p>数组是引用类型，所以在数组声明后，必须为数组分配内存，为数组初始化。</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">&#x2F;&#x2F;第一种初始化方式：
+int[] arrayName;
+arrayName &#x3D; new int[4];
+
+&#x2F;&#x2F;第二种初始化方式：
+int[] arrayName &#x3D; new int[4];
+
+&#x2F;&#x2F;第三种初始化方式：
+int[] arrayName &#x3D; new int[4] &#123;1,1,1,1&#125;
+
+&#x2F;&#x2F;第四种初始化方式；
+int[] arrayName &#x3D; new int[] &#123;1,1,1,1&#125;
+
+&#x2F;&#x2F;第五种初始化方式：
+int[] arrayName &#x3D; &#123;1,1,1,1&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="6-2-二维数组"><a href="#6-2-二维数组" class="headerlink" title="6.2  二维数组"></a>6.2  二维数组</h4><blockquote>
+<p>维数为逗号数+1</p>
+<p>[,]只能声明等长的二维数组</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">&#x2F;&#x2F;数据类型[,] 数组名 &#x3D; new 数据类型[,];
+int[,] arrayName &#x3D; new int[3,2];
+
+int[,] arrayName &#x3D; new int[3,2] &#123;&#123;,&#125;,&#123;,&#125;,&#123;,&#125;&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>[][]的形式则可以声明等长二维数组，也可以声明不等长二维数组。</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">int[][] arrayName &#x3D; new int[3];
+int[0] arrayName &#x3D; new int[2];
+int[1] arrayName &#x3D; new int[3];
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="7-类"><a href="#7-类" class="headerlink" title="7 类"></a>7 类</h3><blockquote>
+<p>其中含有构造函数和析造函数。</p>
+<p>析造函数不能加修饰符。</p>
+</blockquote>
+<h4 id="1-类中成员"><a href="#1-类中成员" class="headerlink" title="1.类中成员:"></a>1.类中成员:</h4><p>属性，方法(函数)，事件，变量(字段)，常量；</p>
+<h4 id="2-类的访问修饰符"><a href="#2-类的访问修饰符" class="headerlink" title="2.类的访问修饰符:"></a>2.类的访问修饰符:</h4><p>internal(缺省):当前程序集；public(公共):全部；</p>
+<h4 id="类成员修饰符："><a href="#类成员修饰符：" class="headerlink" title="类成员修饰符："></a>类成员修饰符：</h4><p>public(公共):全部；</p>
+<p>private(私有的):当前类中；</p>
+<p>protected(受保护的):当前类及子类中；</p>
+<p>internal(当前程序集):当前程序集；</p>
+<p>protected internal: protected 与 internal的并集；</p>
+<h4 id="构建类元素顺序："><a href="#构建类元素顺序：" class="headerlink" title="构建类元素顺序："></a>构建类元素顺序：</h4><p>添加类 -&gt; 添加属性 -&gt; 添加构造函数 -&gt; 添加方法</p>
+<h4 id="初始化顺序："><a href="#初始化顺序：" class="headerlink" title="初始化顺序："></a>初始化顺序：</h4><p>静态变量 -&gt; 静态构造方法  -&gt; 变量  -&gt; 构造方法</p>
+<p>  子类静态变量 -&gt; 子类静态构造方法  -&gt; 父类静态变量  -&gt; 父类静态构造方法  -&gt;  父类变量   -&gt;  父类构造方法  -&gt;子类变量 -&gt; 子类构造方法  </p>
+<h4 id="static-静态类与静态变量："><a href="#static-静态类与静态变量：" class="headerlink" title="static 静态类与静态变量："></a>static 静态类与静态变量：</h4><blockquote>
+<p>1.静态类和静态成员，无需创建类的实例，也不能创造实例，无论对象怎样改变，数据和函数不会发生变化。</p>
+<p>2.静态类中只能访问静态变量。</p>
+<p>3.类和静态类可以有静态构造函数，不能有普通构造函数，在程序开始与实例化之间的某个时刻调用，只调用一次。</p>
+<p>4.类的实例成员函数可以访问类的实例成员，去不能通过类的实例来引用静态成员。却可以通过类型名引用静态成员。</p>
+<p>5.静态类是密封的，不可被继承的。</p>
+<p><code>私有构造函数阻止实例化。</code></p>
+</blockquote>
+<h3 id="8-对象"><a href="#8-对象" class="headerlink" title="8 对象"></a>8 对象</h3><blockquote>
+<p>c#中使用New关键字来创建一个类的对象，即对类的实例化。</p>
+<p>声明却没有给对象名赋值，这个对象为null；</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">实例化方法1：
+    类名 对象名 &#x3D; new 构造方法 ;
+实例化方法2：
+    类名 对象名；
+    对象名 &#x3D; new 构造方法；<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="9-继承"><a href="#9-继承" class="headerlink" title="9 继承"></a>9 继承</h3><blockquote>
+<p>通过继承，可以直接基于现有的类创建新类。现有的类被称为基类，也叫父类，超类。新创建的类被称为派生类，子类。派生类继承基类的方法属性事件。</p>
+<p>构造函数和析构函数不能被继承。</p>
+<p>一个子类只能有一个父类。</p>
+<p>派生类是对基类的扩展，只能添加不能减少。如果派生类新成员的名称与父类相同，则被覆盖。可以继承多个接口。</p>
+<p>object类为所有类的基类。</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">class 子类名:父类名&#123;
+    新成员；
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="this关键字"><a href="#this关键字" class="headerlink" title="this关键字"></a>this关键字</h4><blockquote>
+<p>this关键字引用当前正在执行的类或者结构的特定实例，可以用来访问类的成员。</p>
+<p>指代的是当前实现该类的对象名。</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">public 类名&#123;
+    public 方法名()&#123;
+        int a &#x3D; 1;
+        Console.WriteLine(&quot;[0]&quot;,this.a)
+    &#125;
+&#125;
+public 类名2&#123;
+    类名 对象名 &#x3D; new 构造方法();
+    
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="base关键字"><a href="#base关键字" class="headerlink" title="base关键字"></a>base关键字</h4><blockquote>
+<p>base通常用于访问被派生类重写或者隐藏的基类成员，可以访问公共成员和受保护成员，私有成员不可访问。</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">public 父类名&#123;
+    public 方法名()&#123;
+        xxxx
+    &#125;
+&#125;
+public 子类名:父类名&#123;
+    public 方法名()&#123;
+        ssss
+        base.方法名（）;     &#x2F;&#x2F;调用父类的方法，不会使用子类的同名方法。
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="10-多态"><a href="#10-多态" class="headerlink" title="10 多态"></a>10 多态</h3><h4 id="10-1-重载"><a href="#10-1-重载" class="headerlink" title="10.1  重载"></a>10.1  重载</h4><blockquote>
+<p>重载是指同一个类中存在名称相同但是参数列表不同的多个构造方法。</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">class 类名&#123;
+    public 类名(形参1)&#123;
+        
+    &#125;
+    public 类名(形参2)&#123;
+        
+    &#125;    
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="10-2-重写"><a href="#10-2-重写" class="headerlink" title="10.2 重写"></a>10.2 重写</h4><blockquote>
+<p>重写是指在派生类中的具有与基类中名称相同的方法或者属性。要在派生类中使用与基类中名称相同但目的不同的属性或者方法。</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">public 父类名&#123;
+    public 方法名()&#123;
+        
+    &#125;
+&#125;
+public 子类名:父类名&#123;
+    public 方法名()&#123;
+        
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="virtual-关键字-虚方法"><a href="#virtual-关键字-虚方法" class="headerlink" title="virtual 关键字(虚方法)"></a>virtual 关键字(虚方法)</h4><blockquote>
+<p>重写的属性和方法使用关键字virtual定义，声明这个方法或者属性可以被重写。</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">public 父类名&#123;
+    public virtual 类型 方法名()&#123;    &#x2F;&#x2F;声明这个方法可以在派生类中被重写
+        
+    &#125;
+&#125;
+public 子类名:父类名&#123;
+    public override 方法名()&#123;      &#x2F;&#x2F;声明这个方法是重写自父类的方法。
+        
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="override-关键字"><a href="#override-关键字" class="headerlink" title="override 关键字"></a>override 关键字</h4><blockquote>
+<p>声明在方法之前，表明此方法是重写自父类的方法。</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">public 父类名&#123;
+    public virtual 类型 方法名()&#123;    &#x2F;&#x2F;声明这个方法可以在派生类中被重写
+        
+    &#125;
+&#125;
+public 子类名:父类名&#123;
+    public override 方法名()&#123;      &#x2F;&#x2F;声明这个方法是重写自父类的方法。
+        
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="sealed-关键字"><a href="#sealed-关键字" class="headerlink" title="sealed 关键字"></a>sealed 关键字</h4><blockquote>
+<p>重写的方法使用关键字sealed定义，声明这个方法或者属性是密封的，不允许被重写。</p>
+<p>类用关键字sealed定义，声明这个类是密封的，表示此类不能被继承。</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">public 父类名&#123;
+    public sealed 类型 方法名()&#123;    &#x2F;&#x2F;声明这个方法不能在派生类中被重写
+        
+    &#125;
+&#125;
+public 子类名:父类名&#123;
+    public override 方法名()&#123;      &#x2F;&#x2F;声明这个方法是重写自父类的方法，但是会报错，sealed不允许重写。        
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="10-3-abstract-静态"><a href="#10-3-abstract-静态" class="headerlink" title="10.3 abstract(静态)"></a>10.3 abstract(静态)</h4><blockquote>
+<p>abstract关键字可以修饰类和方法。</p>
+<p>修饰类，证明此类是抽象类，抽象类中可以有抽象方法，却不一定有抽象方法，抽象类可以被继承，不允许被实例化，因为含有抽象方法。继抽象类的类必须实现全部抽象方法后才能实例化，否则必须声明为抽象类。</p>
+<p>修饰方法，证明此方法是抽象方法，有抽象方法的类一定是抽象类，不允许被实例化，只允许有函数名，不允许有函数体。</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">public 父类名&#123;
+    public abstract 类型 方法名()   &#x2F;&#x2F;声明这个方法是抽象方法，不能有函数体。
+
+    public abstract 类型 方法名()  &#x2F;&#x2F;声明这个方法是抽象方法，不能有函数体。
+
+    public 类型 方法名()&#123;    &#x2F;&#x2F;这是一个正常的方法。
+        
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h4 id="10-4-interface-接口"><a href="#10-4-interface-接口" class="headerlink" title="10.4 interface(接口)"></a>10.4 interface(接口)</h4><blockquote>
+<p>一个类只能继承一个父类，一个接口却可继承多个接口。</p>
+<p>不能直接实例化接口。</p>
+<p>接口成员的默认访问类型都是public且只能是public。</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">interface 接口名&#123;
+    接口内容
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+
+
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">凡诚</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2021/11/08/csharp/">http://example.com/2021/11/08/csharp/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint polocy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">凡诚</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C#</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+    <div class="livere-card card" data-aos="fade-up">
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC81NzU4NC8zNDA0OA==">
+        <script type="text/javascript">
+            (function (d, s) {
+                let j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') {
+                    return;
+                }
+
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript。</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->
+</div>
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2021/11/08/mrakdown-yu-yan-jian-jie/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="mrakdown语言简介">
+                        
+                        <span class="card-title">mrakdown语言简介</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-08
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Markdown/" class="post-category">
+                                    Markdown
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Typora/">
+                        <span class="chip bg-color">Typora</span>
+                    </a>
+                    
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/11/08/css-ji-chu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="css基础">
+                        
+                        <span class="card-title">css基础</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-08
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    前端技术
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/css/">
+                        <span class="chip bg-color">css</span>
+                    </a>
+                    
+                    <a href="/tags/html/">
+                        <span class="chip bg-color">html</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        font-size: 15px;
+        color: blue;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="2477330090"
+                   fixed='true'
+                   autoplay='false'
+                   theme='blue'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022</span>
+            
+            <span id="year">2022</span>
+            <a href="/about" target="_blank">凡诚</a>
+            &nbsp;&nbsp;<a href="https://hexo.io/" target="_blank"></a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">575.4k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2022";
+                    var startMonth = "11";
+                    var startDate = "7";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/fanshicheng" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2639144944@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2639144944" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2639144944" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+    <script type="text/javascript">
+        var OriginTitile=document.title,st;
+        document.addEventListener("visibilitychange",function(){
+            document.hidden?(document.title="(Ő∀Ő3)ノ",clearTimeout(st)):(document.title="ヽ(●-`Д´-)ノ欢迎回来",st=setTimeout(function(){document.title=OriginTitile},3e3))
+        })
+    </script>
+    <!-- <script src="/js/cursor.js"></script> -->
+    <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+        </script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i["DaoVoiceObject"] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            a.charset = "utf-8";
+            m.parentNode.insertBefore(a, m)
+        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
+            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
+        daovoice('init', {
+            app_id: "377cb7de"
+        });
+        daovoice('update');
+    </script>
+    
+
+	
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+    <!-- 冒泡 -->
+    
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+<script type="text/javascript" src="/js/fireworks.js"></script>
+
+
+</body>
+
+</html>

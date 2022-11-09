@@ -1,0 +1,2663 @@
+<!DOCTYPE HTML>
+<html lang="Chinese">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="python基础知识, 博客">
+    <meta name="description" content="In me the tiger sniffs the rose.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>python基础知识 | 凡诚</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+
+   <style>
+    body{
+       background-image: url(https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/comment_bg.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">凡诚</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>主页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>文章</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于我</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/about">
+          
+          <i class="fas fa-user-circle" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>我的信息</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/contact">
+          
+          <i class="fas fa-comments" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>留言板</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/friends">
+          
+          <i class="fas fa-address-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>友链</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/comment_bg.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">凡诚</div>
+        <div class="logo-desc">
+            
+            In me the tiger sniffs the rose.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			主页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			文章
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-user-circle"></i>
+			
+			关于我
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/about " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-user-circle" style="position: absolute;left:50px" ></i>
+			      
+		          <span>我的信息</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/contact " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-comments" style="position: absolute;left:50px" ></i>
+			      
+		          <span>留言板</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/friends " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-address-book" style="position: absolute;left:50px" ></i>
+			      
+		          <span>友链</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">python基础知识</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/python/" class="post-category">
+                                python
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2019-03-11
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-11-08
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    5.5k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    20 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="python基础知识"><a href="#python基础知识" class="headerlink" title="python基础知识"></a>python基础知识</h1><h3 id="1-python概述"><a href="#1-python概述" class="headerlink" title="1 python概述"></a>1 python概述</h3><h4 id="1-1优点"><a href="#1-1优点" class="headerlink" title="1.1优点"></a>1.1优点</h4><p> 1.开源，易于维护。</p>
+<p> 2.可移植。</p>
+<p> 3.易于使用，简单优雅。</p>
+<p> 4.<strong>广阔的标准库，功能强大。</strong></p>
+<p> 5.可扩展，可嵌入。</p>
+<h4 id="1-2劣势"><a href="#1-2劣势" class="headerlink" title="1.2劣势"></a>1.2劣势</h4><p>1.运行速度慢。(解释型语言，翻译为机器码耗时)</p>
+<p>2.代码不能加密。(发布程序为源代码)</p>
+<h3 id="2-python语法"><a href="#2-python语法" class="headerlink" title="2 python语法"></a>2 python语法</h3><h4 id="2-1注释"><a href="#2-1注释" class="headerlink" title="2.1注释"></a>2.1注释</h4><ol>
+<li><p>单行注释：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#这是一个单行注释</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>多行注释：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token triple-quoted-string string">'''
+这是一个多行注释
+这是一个多行注释
+'''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ol>
+<hr>
+<h3 id="3-基础语句"><a href="#3-基础语句" class="headerlink" title="3 基础语句"></a>3 基础语句</h3><h4 id="3-1-输出print语句"><a href="#3-1-输出print语句" class="headerlink" title="3.1 输出print语句"></a>3.1 输出print语句</h4><blockquote>
+<p>print(“具体的字符”)<br>print(变量名)</p>
+<p>print(“xxxxx %变量类型缩写” %变量名)</p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#具体输出</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"具体的字符"</span><span class="token punctuation">)</span>
+<span class="token comment">#变量输出</span>
+<span class="token builtin">int</span> a<span class="token operator">=</span><span class="token number">10</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token comment">#格式化输出</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"输出%d具体字符"</span><span class="token operator">%</span>a<span class="token punctuation">)</span>
+<span class="token comment">#连接符</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"具体字符"</span><span class="token punctuation">,</span><span class="token string">"具体字符"</span><span class="token punctuation">,</span><span class="token string">"具体字符"</span><span class="token punctuation">,</span>sep<span class="token operator">=</span><span class="token string">"分隔符(默认为空格)"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">,</span>end<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token comment">#直接连接后方字符串</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">,</span>end<span class="token operator">=</span><span class="token string">"\t"</span><span class="token punctuation">)</span><span class="token comment">#空格后链接后方字符串</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">,</span>end<span class="token operator">=</span><span class="token string">"\n"</span><span class="token punctuation">)</span><span class="token comment">#换行后链接后方字符串</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<table>
+<thead>
+<tr>
+<th>格式符号</th>
+<th align="left">转换</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>%c</td>
+<td align="left">字符</td>
+</tr>
+<tr>
+<td>%s</td>
+<td align="left">通过str()字符串来格式化</td>
+</tr>
+<tr>
+<td>%i</td>
+<td align="left">有符号十进制整数</td>
+</tr>
+<tr>
+<td>%d</td>
+<td align="left">有符号十进制整数</td>
+</tr>
+<tr>
+<td>%u</td>
+<td align="left">无符号十进制整数</td>
+</tr>
+<tr>
+<td>%o</td>
+<td align="left">八进制整数</td>
+</tr>
+<tr>
+<td>%x</td>
+<td align="left">十六进制整数(小写字母)</td>
+</tr>
+<tr>
+<td>%X</td>
+<td align="left">十六进制整数(大写字母)</td>
+</tr>
+<tr>
+<td>%e</td>
+<td align="left">索引符号(小写’e’)</td>
+</tr>
+<tr>
+<td>%E</td>
+<td align="left">索引符号(大写’E’)</td>
+</tr>
+<tr>
+<td>%f</td>
+<td align="left">浮点实数</td>
+</tr>
+<tr>
+<td>%g</td>
+<td align="left">%f和%e的简写</td>
+</tr>
+<tr>
+<td>%G</td>
+<td align="left">%f和%E的简写</td>
+</tr>
+</tbody></table>
+<h4 id="3-2-输入input语句"><a href="#3-2-输入input语句" class="headerlink" title="3.2 输入input语句"></a>3.2 输入input语句</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python">接受输入的变量名 <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"提示信息"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h2 id="4-变量及类型"><a href="#4-变量及类型" class="headerlink" title="4 变量及类型"></a>4 变量及类型</h2><blockquote>
+<p>变量名可以是任意数据类型，在程序中用一个变量名表示</p>
+<p>变量名必须有 大小写英文，数字，和下划线(_)组成</p>
+<p>赋值(a=”ABC”)时，python解释器执行了两个操作:</p>
+<ol>
+<li>在内存中创建了一个”ABC”的字符串</li>
+<li>在内存中创建了一个名为a的变量，并把它指向了”ABC”</li>
+</ol>
+</blockquote>
+<hr>
+<h2 id="5-运算符"><a href="#5-运算符" class="headerlink" title="5 运算符"></a>5 运算符</h2><h3 id="5-1-算数运算符"><a href="#5-1-算数运算符" class="headerlink" title="5.1 算数运算符"></a>5.1 算数运算符</h3><table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">+</td>
+<td>加-两个对象相加</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td>减-得到复数或是一个数减去另一个数</td>
+</tr>
+<tr>
+<td align="center">*</td>
+<td>乘-两个数相乘或是返回一个被重复若干次的字符串</td>
+</tr>
+<tr>
+<td align="center">/</td>
+<td>除-X除以Y</td>
+</tr>
+<tr>
+<td align="center">%</td>
+<td>取模-返回除法的余数</td>
+</tr>
+<tr>
+<td align="center">**</td>
+<td>幂-返回x的y次幂</td>
+</tr>
+<tr>
+<td align="center">//</td>
+<td>取整数- 向下取接近除数的整数</td>
+</tr>
+</tbody></table>
+<h3 id="5-2-比较运算符"><a href="#5-2-比较运算符" class="headerlink" title="5.2 比较运算符"></a>5.2 比较运算符</h3><table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">==</td>
+<td>等于-比较对象是否相等</td>
+</tr>
+<tr>
+<td align="center">!=</td>
+<td>不等于-比较两个对象是否不相等</td>
+</tr>
+<tr>
+<td align="center">&gt;</td>
+<td>大于-返回X是否大于Y</td>
+</tr>
+<tr>
+<td align="center">&lt;</td>
+<td>小于-返回X是否小于Y(所有比较运算符返回1为真，返回0表示假)</td>
+</tr>
+<tr>
+<td align="center">&gt;=</td>
+<td>大于等于-返回X是否大于等于Y</td>
+</tr>
+<tr>
+<td align="center">&lt;=</td>
+<td>小于等于-返回X是否小于等于Y</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="5-3-赋值运算符"><a href="#5-3-赋值运算符" class="headerlink" title="5.3 赋值运算符"></a>5.3 赋值运算符</h3><table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">=</td>
+<td>等于- a=1</td>
+</tr>
+<tr>
+<td align="center">+=</td>
+<td>加法赋值语句-“a+=b” = “a=a+b”</td>
+</tr>
+<tr>
+<td align="center">-=</td>
+<td>减法赋值语句-“a-=b” = “a=a-b”</td>
+</tr>
+<tr>
+<td align="center">*=</td>
+<td>乘法赋值语句-“a*=b”  = “a=a*b”</td>
+</tr>
+<tr>
+<td align="center">/=</td>
+<td>除法赋值语句-“a/=b” = “a=a/b”</td>
+</tr>
+<tr>
+<td align="center">%=</td>
+<td>取模赋值语句-“a%=b” = “a=a%b”</td>
+</tr>
+<tr>
+<td align="center">**=</td>
+<td>幂赋值语句-“a* *=b” = “a=a * *b”</td>
+</tr>
+<tr>
+<td align="center">//=</td>
+<td>加法赋值语句-“a//=b” = “a=a//b”</td>
+</tr>
+</tbody></table>
+<h3 id="5-4-位运算符"><a href="#5-4-位运算符" class="headerlink" title="5.4 位运算符"></a>5.4 位运算符</h3><table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">&amp;</td>
+<td>按位与运算符-参与运算的两个值相应位为1则结果为1，否则为0</td>
+</tr>
+<tr>
+<td align="center">|</td>
+<td>按位或运算符-参与运算的其中一个值为1，结果为1.</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td>按位异或运算符-当两相应的二进制位相异时，结果为1.</td>
+</tr>
+<tr>
+<td align="center">~</td>
+<td>按位取反运算符-对数据的每个二进制位取反，即把1变为0，把0变为1.</td>
+</tr>
+<tr>
+<td align="center">&lt;&lt;</td>
+<td>左移动运算符-运算数的各二进制位全部左移若干位由”&lt;&lt;”指定移动的位数。</td>
+</tr>
+<tr>
+<td align="center">&gt;&gt;</td>
+<td>右移动运算符-运算数的各二进制位全部右移若干位由”&lt;&lt;”指定移动的位数。</td>
+</tr>
+</tbody></table>
+<h3 id="5-5-逻辑运算符"><a href="#5-5-逻辑运算符" class="headerlink" title="5.5 逻辑运算符"></a>5.5 逻辑运算符</h3><table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">and</td>
+<td>布尔”与”-</td>
+</tr>
+<tr>
+<td align="center">or</td>
+<td>布尔”或”-</td>
+</tr>
+<tr>
+<td align="center">not</td>
+<td>布尔”非”-</td>
+</tr>
+</tbody></table>
+<h3 id="5-6-成员运算符"><a href="#5-6-成员运算符" class="headerlink" title="5.6 成员运算符"></a>5.6 成员运算符</h3><table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">in</td>
+<td>如果在指定数列中找到值返回true,否则返回falst</td>
+</tr>
+<tr>
+<td align="center">not in</td>
+<td>如果在指定数列中没有找到值返回true,否则返回falst</td>
+</tr>
+</tbody></table>
+<h3 id="5-7-运算符的优先级"><a href="#5-7-运算符的优先级" class="headerlink" title="5.7 运算符的优先级"></a>5.7 运算符的优先级</h3><table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">**</td>
+<td>指数（最高优先级）</td>
+</tr>
+<tr>
+<td align="center">* / % //</td>
+<td>乘,除,取模，取整数</td>
+</tr>
+<tr>
+<td align="center">+-</td>
+<td>加，减</td>
+</tr>
+<tr>
+<td align="center">&gt;&gt; &lt;&lt;</td>
+<td>左移右移</td>
+</tr>
+<tr>
+<td align="center">&amp;</td>
+<td>位（and）</td>
+</tr>
+<tr>
+<td align="center">^ |</td>
+<td>位运算符</td>
+</tr>
+<tr>
+<td align="center">&lt;= &lt;&lt; &gt;&gt; &gt;=</td>
+<td>比较运算符</td>
+</tr>
+<tr>
+<td align="center">&lt;&gt; == !=</td>
+<td>等于运算符</td>
+</tr>
+<tr>
+<td align="center">= += -= *= /= %= **=</td>
+<td>赋值运算符</td>
+</tr>
+<tr>
+<td align="center">is     is not</td>
+<td>身份运算符</td>
+</tr>
+<tr>
+<td align="center">in     not in</td>
+<td>成员运算符</td>
+</tr>
+<tr>
+<td align="center">and    or   not</td>
+<td>逻辑运算符</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="6-条件判断语句"><a href="#6-条件判断语句" class="headerlink" title="6 条件判断语句"></a>6 条件判断语句</h2><blockquote>
+<p>python 指定任何非0和非空值为true ，0或者None为falst</p>
+<p>条件判断语句以缩进控制范围</p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">if</span> 判断语句：<span class="token comment">#缩进必须同级相同，要不不识别 </span>
+
+	执行语句<span class="token number">1</span>
+
+<span class="token keyword">elif</span> 判断语句<span class="token number">2</span>：
+	执行语句<span class="token number">2</span>
+<span class="token keyword">else</span>：
+	执行语句<span class="token number">3</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h2 id="7-循环语句"><a href="#7-循环语句" class="headerlink" title="7 循环语句"></a>7 循环语句</h2><h3 id="7-1-for循环"><a href="#7-1-for循环" class="headerlink" title="7.1 for循环"></a>7.1 for循环</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>：<span class="token comment">#从0开始五个数的数组</span>
+	循环语句
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span>：<span class="token comment">#从0开始到10为止，步进值为3</span>
+	循环语句
+a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"1"</span><span class="token punctuation">,</span><span class="token string">"2"</span><span class="token punctuation">,</span><span class="token string">"3"</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">for</span> i<span class="token punctuation">,</span>x <span class="token keyword">in</span> enumerste<span class="token punctuation">(</span>列表<span class="token punctuation">)</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>x<span class="token punctuation">)</span>  					<span class="token comment">#枚举函数，i为索引，x为列表值</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="7-2-while循环"><a href="#7-2-while循环" class="headerlink" title="7.2 while循环"></a>7.2 while循环</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python">i <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token keyword">while</span> i <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">:</span>
+    循环语句
+    i <span class="token operator">=</span> i<span class="token operator">+</span><span class="token operator">+</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    循环语句<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="7-3循环控制-break-continue-pass"><a href="#7-3循环控制-break-continue-pass" class="headerlink" title="7.3循环控制 break continue pass"></a>7.3循环控制 break continue pass</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#break 退出循环语句</span>
+<span class="token comment">#continue 跳过当前循环</span>
+<span class="token comment">#pass 占位符</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h2 id="8-字符串，列表，元组，字典"><a href="#8-字符串，列表，元组，字典" class="headerlink" title="8 字符串，列表，元组，字典"></a>8 字符串，列表，元组，字典</h2><h3 id="8-1-字符串"><a href="#8-1-字符串" class="headerlink" title="8.1 字符串"></a>8.1 字符串</h3><blockquote>
+<p>python 中的字符串可以使用单引号，双引号和三引号括起来，使用反斜杠\转义特殊字符</p>
+<p>python3源码文件默认以UTF-8编码，所有字符串都是unicode字符串</p>
+<p>支持字符拼接，截取等多种运算</p>
+<p>字符串中出现单引号和双引号时需要前加\转义</p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">word <span class="token operator">=</span> <span class="token string">'字符串'</span>
+word1 <span class="token operator">=</span> <span class="token string">"字符串"</span>
+word2 <span class="token operator">=</span> <span class="token triple-quoted-string string">"""
+		字符段落
+"""</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="8-1-1-str-x-y-z"><a href="#8-1-1-str-x-y-z" class="headerlink" title="8.1.1 str[x,y,z]"></a>8.1.1 str[x,y,z]</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token builtin">str</span> <span class="token operator">=</span> <span class="token string">"字符串"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">[</span>x<span class="token punctuation">:</span>y<span class="token punctuation">:</span>z<span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment">#@x为起始值，从零开始，y为结束值，不打印结束值，z为步进值。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h4 id="8-1-2字符串连接"><a href="#8-1-2字符串连接" class="headerlink" title="8.1.2字符串连接"></a>8.1.2字符串连接</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python">str1 <span class="token operator">=</span> <span class="token string">"字符串"</span>
+str2 <span class="token operator">=</span> <span class="token string">"字符串"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>str1 <span class="token operator">+</span> str2<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="8-1-3字符串的常见操作"><a href="#8-1-3字符串的常见操作" class="headerlink" title="8.1.3字符串的常见操作"></a>8.1.3字符串的常见操作</h4><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">描述</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">capitalize</td>
+<td align="center">将字符串第一个字符转换为大写</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">bytes.decode(encoding=”utf-8”,errors=”strict”)</td>
+<td align="center">Python3中没有decode方法，但是我们可以使用bytes对象的decode（）方法来解码给定的bytes对象，这个bytes对象可以由str.encode()来编码返回。</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">encode(encoding=”utf-8”,errors=”strict”)</td>
+<td align="center">以encoding指定的编码格式编码字符串，如果出错默认报一个VaError的异常，除非errors指定的是’ignore’或者’replce’</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">isalnum()</td>
+<td align="center">如果字符串中至少有一个字符并且所有字符都是字母或者数字则返回True,否则返回Falst.</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">isalpha()</td>
+<td align="center">如果字符串中至少有一个字符并且所有字符都是字母则返回True,否则返回Falst.</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">isnumeric()</td>
+<td align="center">如果字符串中只包含数字字符，则返回True，否则返回Falst。</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">isdigit()</td>
+<td align="center">如果字符串中只包含数字字符，则返回True，否则返回Falst。</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">join(分隔符)</td>
+<td align="center">以指定字符串为分隔符，将所有元素合并为一个新的字符串。</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">len(string)</td>
+<td align="center">返回字符串的长度。</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">lstrip()</td>
+<td align="center">截掉字符串左边的空格或指定字符。</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">rstrip()</td>
+<td align="center">删除字符串末尾的空格</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">split(str=””,num=string.count(str)num=string.count(str))</td>
+<td align="center">以str为分隔符截取字符串，如果num有指定值则只截取num+1个字符串。</td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="8-2-列表-list"><a href="#8-2-列表-list" class="headerlink" title="8.2 列表(list)"></a>8.2 列表(list)</h3><blockquote>
+<p>列表可以完成大多数集合类的数据结构实现。列表中的元素的类型可以不相同，它支持数字，字符串，甚至可以包含列表(所谓嵌套)。</p>
+<p>列表是写在方括号[]之间,用逗号分隔开的元素列表。</p>
+<p>列表索引值以0为开始值，-1为末尾的开始位置。</p>
+<p>列表可以使用+操作符进行拼接，使用*操作符进行重复。</p>
+<p>支持 in  count 方法</p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token builtin">list</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"字符串"</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">]</span>  <span class="token comment">#@可以存在混合类型</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="8-2-1-列表方法"><a href="#8-2-1-列表方法" class="headerlink" title="8.2.1 列表方法"></a>8.2.1 列表方法</h4><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">描述</th>
+<th align="center">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">append()</td>
+<td align="center">在末尾添加元素</td>
+<td align="center">list.append([1,2])– list = [ 1 , 2 , [1 , 2]]</td>
+</tr>
+<tr>
+<td align="center">extend()</td>
+<td align="center">在末尾添加元素</td>
+<td align="center">list.extend([3,4]) –  list = [ 1 , 2 , 3 , 4]</td>
+</tr>
+<tr>
+<td align="center">insert()</td>
+<td align="center">在指定位置插入</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">del 列表名</td>
+<td align="center">删除列表</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">pop()</td>
+<td align="center">弹出列表元素</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">index()</td>
+<td align="center">查询指定范围内是否存在</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">count()</td>
+<td align="center">查询某个元素出现几次</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">reverse()</td>
+<td align="center">反转排序</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">sort()</td>
+<td align="center">从小到大排序</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">sort(reverse=True)</td>
+<td align="center">从大到小排序</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">remove()</td>
+<td align="center">删除指定内容的元素</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h4 id="8-2-2-列表方法介绍"><a href="#8-2-2-列表方法介绍" class="headerlink" title="8.2.2 列表方法介绍"></a>8.2.2 列表方法介绍</h4><ol>
+<li><p>增：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">   <span class="token builtin">list</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span>
+   
+   <span class="token comment">#在末尾追加元素 append()方法--列表名.append(要添加的字符)         </span>
+   <span class="token builtin">list</span><span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string">"要增加的字符"</span><span class="token punctuation">)</span>
+!!!!   <span class="token builtin">list</span><span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>  <span class="token builtin">list</span> <span class="token operator">=</span> <span class="token punctuation">[</span> <span class="token number">1</span> <span class="token punctuation">,</span> <span class="token number">2</span> <span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span> <span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+   
+   <span class="token comment">#在末尾追加元素 extend()方法--列表名.extend(要追加的元素)</span>
+   <span class="token builtin">list</span><span class="token punctuation">.</span>extend<span class="token punctuation">(</span><span class="token punctuation">[</span>元组元素，元组元素<span class="token punctuation">]</span><span class="token punctuation">)</span>
+   !!!!   <span class="token builtin">list</span><span class="token punctuation">.</span>extend<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>  <span class="token builtin">list</span> <span class="token operator">=</span> <span class="token punctuation">[</span> <span class="token number">1</span> <span class="token punctuation">,</span> <span class="token number">2</span> <span class="token punctuation">,</span> <span class="token number">3</span> <span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span> 
+   
+   <span class="token comment">#在指定位置插入 insert()方法--列表名.insert(要插入位置的下标，插入的元素)</span>
+   <span class="token builtin">list</span><span class="token punctuation">.</span>insert<span class="token punctuation">(</span>插入索引，插入元素<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>2.删：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token builtin">list</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>
+
+<span class="token comment">#在指定位置删除元素 del方法--del 列表名[要删除元素的索引]</span>
+<span class="token keyword">del</span> <span class="token builtin">list</span><span class="token punctuation">[</span>索引<span class="token punctuation">]</span>
+
+<span class="token comment">#弹出最后一个元素 pop方法--列表名,pop()</span>
+<span class="token builtin">list</span><span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">#删除指定内容的元素 remove()方法--列表名.remove("要删除元素的具体内容")</span>
+<span class="token builtin">list</span><span class="token punctuation">.</span>remove<span class="token punctuation">(</span><span class="token string">"指定内容"</span><span class="token punctuation">)</span>   <span class="token comment">#从前开始遍历，优先删除最前方的。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>3.改：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token builtin">list</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>
+
+<span class="token comment">#指定元素进行修改 无具体方法--列表名[修改元素索引] = "具体内容"</span>
+<span class="token builtin">list</span><span class="token punctuation">[</span>索引<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">""</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>4.查： </p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token builtin">list</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span>
+ 
+<span class="token comment">#查询指定元素是否在列表中 if判断-if 元素 in 列表：</span>
+<span class="token keyword">if</span> <span class="token number">1</span> <span class="token keyword">in</span> <span class="token builtin">list</span><span class="token punctuation">:</span>
+    反馈语句
+
+<span class="token comment">#查询指定范围内是否存在 index()方法--列表名.index(指定元素，开始元素，结束元素) ！！！左包含右不包含</span>
+<span class="token builtin">list</span><span class="token punctuation">.</span>index<span class="token punctuation">(</span>指定元素<span class="token punctuation">,</span>开始，结束<span class="token punctuation">(</span>不包含<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">#@存在返回索引，不存在报错</span>
+
+<span class="token comment">#查询某个元素出现几次 count()方法--列表名.count(元素具体值)</span>
+<span class="token builtin">list</span><span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token string">"元素具体值"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>5.排：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token builtin">list</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span>
+
+<span class="token comment">#反转排序 reverse()方法--列表名.reverse()</span>
+<span class="token builtin">list</span><span class="token punctuation">.</span>reverse<span class="token punctuation">(</span><span class="token punctuation">)</span>         <span class="token comment">#@反转列表顺序</span>
+
+<span class="token comment">#从小到大排序 sort()方法--列表名.sort()</span>
+<span class="token builtin">list</span><span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span>           <span class="token comment">#@从大到小排序</span>
+
+<span class="token comment">#从大到小排序 sort(reverse=True)方法--列表.sort(reverse=True)</span>
+<span class="token builtin">list</span> <span class="token operator">=</span> sort<span class="token punctuation">(</span>reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span> <span class="token comment">#@从大到小排序</span>
+
+ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ol>
+<h4 id="8-2-3-列表的嵌套"><a href="#8-2-3-列表的嵌套" class="headerlink" title="8.2.3 列表的嵌套"></a>8.2.3 列表的嵌套</h4><blockquote>
+<p><code>list = [[1,2],[3,4],[5,6]]</code></p>
+<p>列表名[索引][索引]    list[索引][索引]</p>
+</blockquote>
+<hr>
+<h3 id="8-3-元组-tuple"><a href="#8-3-元组-tuple" class="headerlink" title="8.3 元组(tuple)"></a>8.3 元组(tuple)</h3><blockquote>
+<p>元组(Tuple)与列表相似，不同之处是元组中的元素不能修改。写在小括号中，元素之间用逗号隔开。</p>
+<p>元组的元素不可变，但是可以包含可变对象，如列表</p>
+<p>！！！<code>tuple = (0)  </code>时，<code>type(tuple</code>) 时<code>int</code>型的，只有<code>tuple = (0,) </code>时<code>type(tuple)</code> 时<code>tuple</code>型的</p>
+<p>支持 in  count 方法</p>
+</blockquote>
+<h4 id="8-3-1-元组方法"><a href="#8-3-1-元组方法" class="headerlink" title="8.3.1 元组方法"></a>8.3.1 元组方法</h4><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">描述</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">len()</td>
+<td align="center">获取元组长度</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">max()</td>
+<td align="center">获取元组元素最大值</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">min()</td>
+<td align="center">获取元组元素最小值</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">tuple()</td>
+<td align="center">将其他类型对象转换为元组</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">del 元组名</td>
+<td align="center">删除元组</td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+</tbody></table>
+<h4 id="8-3-2-元组方法介绍"><a href="#8-3-2-元组方法介绍" class="headerlink" title="8.3.2 元组方法介绍"></a>8.3.2 元组方法介绍</h4><p>1.增：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token builtin">tuple</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span>
+
+<span class="token comment">#并不是在某一个上增加了，而是新建了。</span>
+tup2 <span class="token operator">=</span> <span class="token punctuation">(</span>元素<span class="token punctuation">)</span> 
+tup1 <span class="token operator">=</span>（元素）
+tup <span class="token operator">=</span> tup1 <span class="token operator">+</span> tup2
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>2.删：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token builtin">tuple</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span>
+
+<span class="token comment">#删除整个元组  del 元组名</span>
+<span class="token keyword">del</span> <span class="token builtin">tuple</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>3.查：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token builtin">tuple</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span>
+<span class="token comment">#查找具体元素  元组名[索引]</span>
+<span class="token builtin">tuple</span><span class="token punctuation">[</span>索引<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id="8-4-字典-dict"><a href="#8-4-字典-dict" class="headerlink" title="8.4 字典(dict)"></a>8.4 字典(dict)</h3><blockquote>
+<p>字典时无序的对象的集合，使用键值对存储(key-value)，具有极快的查找速度。</p>
+<p>键(key)必须使用不可变的类型。</p>
+<p>同一字典中，键(key)必须唯一。</p>
+</blockquote>
+<h4 id="8-4-1方法"><a href="#8-4-1方法" class="headerlink" title="8.4.1方法"></a>8.4.1方法</h4><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">描述</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">len()</td>
+<td align="center">获取字典长度</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">max()</td>
+<td align="center">获取最大key</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">min()</td>
+<td align="center">获取最大value</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">dict()</td>
+<td align="center">将其他类型转换为字典    dict(        [   (1,2),(1,2)   ]           )</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">get()</td>
+<td align="center">查找指定键的值</td>
+<td>未查找到不报错，可以设定默认值</td>
+</tr>
+<tr>
+<td align="center">keys()</td>
+<td align="center">查找所有键</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">values()</td>
+<td align="center">查找所有值</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">items()</td>
+<td align="center">查找所有键值</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">del 字典名</td>
+<td align="center">删除字典</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">clear()</td>
+<td align="center">清除字典</td>
+<td></td>
+</tr>
+</tbody></table>
+<h4 id="8-4-2字典的具体操作"><a href="#8-4-2字典的具体操作" class="headerlink" title="8.4.2字典的具体操作"></a>8.4.2字典的具体操作</h4><p>1.查：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">info <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token string">"key"</span><span class="token punctuation">:</span><span class="token string">"value"</span><span class="token punctuation">,</span><span class="token string">"key1"</span><span class="token punctuation">:</span><span class="token string">"value"</span><span class="token punctuation">&#125;</span>
+
+<span class="token comment">#查找指定键的值  字典名["字典中具体的键"]</span>
+info<span class="token punctuation">[</span><span class="token string">"key"</span><span class="token punctuation">]</span>				<span class="token comment">#如果访问不存在的键会报错</span>
+
+<span class="token comment">#查找指定键的值  get()方法--字典名.get("字典中具体的键","如果未查询到，返回的值")</span>
+info<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"key"</span><span class="token punctuation">)</span>			<span class="token comment">#如果不存在返回None</span>
+info<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"key"</span><span class="token punctuation">,</span><span class="token string">"设定默认值"</span><span class="token punctuation">)</span>			<span class="token comment">#如果不存在返回设定的值，如果找到默认值不发挥作用。</span>
+
+<span class="token comment">#查找所有键  keys()方法--字典名.keys()</span>
+info<span class="token punctuation">.</span>keys<span class="token punctuation">(</span><span class="token punctuation">)</span>                <span class="token comment">#返回所有键(列表)</span>
+
+<span class="token comment">#查找所有值  values()方法--字典名.values()</span>
+info<span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span>                <span class="token comment">#返回所有值(列表)</span>
+
+<span class="token comment">#查找所有键值  items()方法--字典名.items()</span>
+info<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span>                <span class="token comment">#返回所有键值(列表)---[(键，值),(),()]</span>
+<span class="token keyword">for</span> key<span class="token punctuation">,</span>value <span class="token keyword">in</span> 字典名<span class="token punctuation">,</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"key=%s,value=%s"</span><span class="token punctuation">,</span><span class="token operator">%</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span>value<span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>2.增：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">info <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token string">"key"</span><span class="token punctuation">:</span><span class="token string">"value"</span><span class="token punctuation">,</span><span class="token string">"key1"</span><span class="token punctuation">:</span><span class="token string">"value"</span><span class="token punctuation">&#125;</span>
+
+<span class="token comment">#增加新的键值对  字典名["键"] = 值</span>
+info<span class="token punctuation">[</span><span class="token string">"key2"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"value"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>3.删：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">info <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token string">"key"</span><span class="token punctuation">:</span><span class="token string">"value"</span><span class="token punctuation">,</span><span class="token string">"key1"</span><span class="token punctuation">:</span><span class="token string">"value"</span><span class="token punctuation">&#125;</span>
+
+<span class="token comment">#删除指定键值对。 del方法 --del 字典名["指定值"]</span>
+<span class="token keyword">del</span> info<span class="token punctuation">[</span><span class="token string">"key"</span><span class="token punctuation">]</span>          <span class="token comment">#删除整个键值对，删除后再访问报错。</span>
+<span class="token keyword">del</span> info                 <span class="token comment">#删除字典，再访问报错。</span>
+
+<span class="token comment">#清空字典  clear()方法 --字典名.clear()</span>
+info<span class="token punctuation">.</span>clear<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>4.改：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">info <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token string">"key"</span><span class="token punctuation">:</span><span class="token string">"value"</span><span class="token punctuation">,</span><span class="token string">"key1"</span><span class="token punctuation">:</span><span class="token string">"value"</span><span class="token punctuation">&#125;</span>
+
+<span class="token comment">#更改键对应的值    字典名["键"] = ”值“</span>
+info<span class="token punctuation">[</span><span class="token string">"key"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"值"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id="8-5集合-set"><a href="#8-5集合-set" class="headerlink" title="8.5集合(set)"></a>8.5集合(set)</h3><blockquote>
+<p>集合和字典类似，也是一组key的集合，但是不存在存储value。由于key不能重复，所以，再set中，没有重复的key。</p>
+<p>set是无序的，重复元素再set中自动被过滤。</p>
+</blockquote>
+<h4 id="8-5-1方法"><a href="#8-5-1方法" class="headerlink" title="8.5.1方法"></a>8.5.1方法</h4><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">描述</th>
+<th>举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">for循环</td>
+<td align="center">遍历集合</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">update()</td>
+<td align="center">更新集合</td>
+<td>集合名.update(集合名)</td>
+</tr>
+<tr>
+<td align="center">add()</td>
+<td align="center">向集合中添加元素</td>
+<td>集合名.add(元素)</td>
+</tr>
+<tr>
+<td align="center">remove()</td>
+<td align="center">移除集合中的元素</td>
+<td>集合名.remove(元素)</td>
+</tr>
+<tr>
+<td align="center">pop()</td>
+<td align="center">弹出元素</td>
+<td>集合名.pop(元素)</td>
+</tr>
+<tr>
+<td align="center">clear()</td>
+<td align="center">清除集合中的元素</td>
+<td>集合名.clear()</td>
+</tr>
+<tr>
+<td align="center">del</td>
+<td align="center">删除集合</td>
+<td>del 集合名</td>
+</tr>
+<tr>
+<td align="center">len()</td>
+<td align="center">获取集合长度</td>
+<td>集合名.len()</td>
+</tr>
+<tr>
+<td align="center">max()</td>
+<td align="center">获取最大值</td>
+<td>集合名.max()</td>
+</tr>
+<tr>
+<td align="center">min()</td>
+<td align="center">获取最小值</td>
+<td>集合名.min()</td>
+</tr>
+<tr>
+<td align="center">set()</td>
+<td align="center">将其他类型转换为集合</td>
+<td>set()</td>
+</tr>
+</tbody></table>
+<h3 id="8-6-总结"><a href="#8-6-总结" class="headerlink" title="8.6 总结"></a>8.6 总结</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>是否有序</th>
+<th>是否可变</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>列表[]</td>
+<td>有序</td>
+<td>可变类型</td>
+</tr>
+<tr>
+<td>元组()</td>
+<td>有序</td>
+<td>不可变类型</td>
+</tr>
+<tr>
+<td>字典{}</td>
+<td>无序</td>
+<td>key不可变,value可变</td>
+</tr>
+<tr>
+<td>集合{}</td>
+<td>无序</td>
+<td>可变类型（不可重复）</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="9-转义字符"><a href="#9-转义字符" class="headerlink" title="9 转义字符"></a>9 转义字符</h2><blockquote>
+<p>有些字符无法在语句中直接使用，需要转义后才能使用。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">转义字符</th>
+<th>描述</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">(在行尾时)</td>
+<td>续行符</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">\\</td>
+<td>反斜杠符号</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">\‘</td>
+<td>单引号</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">\“</td>
+<td>双引号</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">\a</td>
+<td>响铃</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">\b</td>
+<td>退格</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">\000</td>
+<td>空格</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">\n</td>
+<td>换行</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">\v</td>
+<td>纵向制表符</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">\t</td>
+<td>横向制表符</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">\r</td>
+<td>回车</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">\f</td>
+<td>换页</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">\oyy</td>
+<td>八进制数，yy代表字符，列如：\o12代表换行，其中o是字母</td>
+<td>。</td>
+</tr>
+<tr>
+<td align="center">\xyy</td>
+<td>十六进制数，yy代表的字符，列如：\x0a代表换行。</td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"字符串"</span><span class="token punctuation">)</span><span class="token comment">#@字符串中的\为转义字符，进行转义。</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">r"字符串"</span><span class="token punctuation">)</span><span class="token comment">#@要打印的字符串前加 r 表示字符串其中转义\不进行转义，直接输出。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="10-函数"><a href="#10-函数" class="headerlink" title="10 函数"></a>10 函数</h2><h3 id="10-1-概念"><a href="#10-1-概念" class="headerlink" title="10.1 概念"></a>10.1 概念</h3><blockquote>
+<p>1.开发程序时，需要某块代码多次，但是为了提高编写效率以及代码的重用，所以把具有独立功能的代码块组织为一个小模块，这就是函数。</p>
+<p>2.函数可以有多个return 但是只要执行一个return就算函数调用完成。</p>
+<p>3.函数名不能重复。</p>
+<p>4.带参函数，如果在定义时有形参，那么在调用时就应该传递参数</p>
+<p>5.调用时，实参的个数和先后顺序应该和定义函数中的要求一致。</p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#不带参数</span>
+<span class="token keyword">del</span> 函数名<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    函数体<span class="token punctuation">(</span><span class="token keyword">pass</span><span class="token punctuation">)</span>
+
+<span class="token comment">#带参数</span>
+<span class="token keyword">del</span> 函数名<span class="token punctuation">(</span>参数<span class="token number">1</span><span class="token punctuation">,</span>参数<span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    函数体<span class="token punctuation">(</span><span class="token keyword">pass</span><span class="token punctuation">)</span>
+
+<span class="token comment">#带返回值-------只有有return才有返回值</span>
+<span class="token keyword">del</span> 函数名<span class="token punctuation">(</span>参数<span class="token number">1</span><span class="token punctuation">,</span>参数<span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    函数体<span class="token punctuation">(</span><span class="token keyword">pass</span><span class="token punctuation">)</span>
+	<span class="token keyword">return</span> 参数
+变量名 <span class="token operator">=</span> 函数名<span class="token punctuation">(</span><span class="token punctuation">)</span>    		   <span class="token comment">#接收单返回值</span>
+<span class="token keyword">del</span> 函数名<span class="token punctuation">(</span>参数<span class="token number">1</span><span class="token punctuation">,</span>参数<span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    函数体<span class="token punctuation">(</span><span class="token keyword">pass</span><span class="token punctuation">)</span>
+	<span class="token keyword">return</span> 参数<span class="token punctuation">,</span>参数
+变量名<span class="token punctuation">,</span>变量名 <span class="token operator">=</span> 函数名<span class="token punctuation">(</span><span class="token punctuation">)</span>     <span class="token comment">#接收多个返回值</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="10-2-全局变量和局部变量"><a href="#10-2-全局变量和局部变量" class="headerlink" title="10.2 全局变量和局部变量"></a>10.2 全局变量和局部变量</h3><blockquote>
+<p>全局变量：在整体函数上声明的变量，可以在所有函数上使用。</p>
+<p>局部变量：在函数体中声明的变量，只能在本函数上使用。</p>
+<p>在函数中，全局变量和局部变量同名时，优先使用的是局部变量，要使用全局变量需要在声明之前加 <code>global</code> 关键字</p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">a <span class="token operator">=</span> <span class="token number">1</span>			<span class="token comment">##全局变量</span>
+<span class="token keyword">del</span> 函数名（）：
+	a <span class="token operator">=</span> <span class="token number">2</span>		<span class="token comment">##局部变量，会被优先修改</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>		<span class="token comment">##结果为1</span>
+
+a <span class="token operator">=</span> <span class="token number">1</span>			<span class="token comment">##全局变量</span>
+<span class="token keyword">del</span> 函数名（）：
+	<span class="token keyword">global</span> a <span class="token operator">=</span> <span class="token number">2</span>		<span class="token comment">##声明使用全局变量</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>		<span class="token comment">##结果为2</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="11-文件"><a href="#11-文件" class="headerlink" title="11 文件"></a>11 文件</h2><h3 id="11-1-文件操作"><a href="#11-1-文件操作" class="headerlink" title="11.1 文件操作"></a>11.1 文件操作</h3><p>1.打开</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">##打开指定路径，文件名的文件，使用设定的模式。</span>
+变量名<span class="token number">1</span> <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"文件名"</span><span class="token punctuation">,</span><span class="token string">"打开模式"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>2.关闭</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">变量名<span class="token number">1</span> <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"文件名"</span><span class="token punctuation">,</span><span class="token string">"打开模式"</span><span class="token punctuation">)</span>
+
+<span class="token comment">#关闭已经打开的文件。</span>
+变量名<span class="token number">1</span><span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>3.读</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">变量名<span class="token number">1</span> <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"文件名"</span><span class="token punctuation">,</span><span class="token string">"打开模式"</span><span class="token punctuation">)</span>
+
+<span class="token comment">#读取打开文件指定字符的内容	read()方法--打开文件的变量名.read(读取字符个数)</span>
+<span class="token comment">#read()方法开始定位在文件头，每执行一次向后移动指定字符。</span>
+变量名<span class="token number">1</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>    	<span class="token comment">#读取五个字符</span>
+变量名<span class="token number">1</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>		<span class="token comment">#会继续往后读取5个字符，与上一句代码读取不相同 ！！！！！！</span>
+
+<span class="token comment">#读取打开文件所有行的内容 readlines()方法--打开文件的变量名.readlines()</span>
+变量名<span class="token number">1</span><span class="token punctuation">.</span>readlines<span class="token punctuation">(</span><span class="token punctuation">)</span> 		<span class="token comment">#返回每行一个元素的列表</span>
+
+<span class="token comment">#读取打开文件指定行的内容 readline()方法--打开文件的变量名.readline()</span>
+<span class="token comment">#readline()方法开始定位在文件头，每执行一次向后移动指定行。</span>
+变量名<span class="token number">1</span><span class="token punctuation">.</span>readline<span class="token punctuation">(</span><span class="token punctuation">)</span> 		<span class="token comment">#返回每行一个元素的列表</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>4.文件重命名</p>
+<p>引入os模块，使用os中的rename()进行文件重命名。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> os
+
+<span class="token comment">#文件重命名  rename()方法--os.rename("需要修改的文件名","新的文件名")</span>
+os<span class="token punctuation">.</span>rename<span class="token punctuation">(</span><span class="token string">"旧文件名"</span><span class="token punctuation">,</span><span class="token string">"新文件名"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>5.删除文件</p>
+<p>引入os模块，使用os中的remove()进行文件删除。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> os
+
+<span class="token comment">#文件删除  remove()方法--os.remove("要删除的文件名")</span>
+os<span class="token punctuation">.</span>remove<span class="token punctuation">(</span><span class="token string">"要删除的文件名"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="11-2打开模式"><a href="#11-2打开模式" class="headerlink" title="11.2打开模式"></a>11.2打开模式</h3><table>
+<thead>
+<tr>
+<th align="center">访问模式</th>
+<th align="center">说明</th>
+<th align="center">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">r</td>
+<td align="center">以只读的方式打开文件。文件的指针将会放在文件的开头。这是默认的模式。</td>
+<td align="center">如果不存在文件会报错</td>
+</tr>
+<tr>
+<td align="center">w</td>
+<td align="center">打开一个文件只用于写入。如果该文件已经存在则将其覆盖。如果该文件不存在，创建新文件。</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">a</td>
+<td align="center">打开一个文件用于追加，如果该文件已经存在，文件指针将会放在文件的结尾，也就是说，新的内容会被写到已有的内容之后，如果该文件不存在，创建新文件进行写入。</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">rb</td>
+<td align="center">以二进制格式打开一个文件用于只读，文件指针将会放在文件的开头。这是默认的模式。</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">wb</td>
+<td align="center">以二进制格式打开一个文件用于写入，文件的指针将会放在文件的开头。这是默认的模式。</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">ab</td>
+<td align="center">以二进制格式打开一个文件用于追加，文件指针将会放在文件的结尾，也就是说，新的内容会被写到已有的内容之后，如果该文件不存在，创建新文件进行写入。</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">r+</td>
+<td align="center">打开一个文件用于读写，文件的指针将会放在文件的开头。</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">w+</td>
+<td align="center">打开一个文件用于读写，如果该文件已经存在则将其覆盖。如果该文件不存在，创建新文件。</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">a+</td>
+<td align="center">打开一个文件用于读写，如果文件存在，文件指针将会放到文件的结尾，文件打开时会是追加模式。如果文件不存在，创建新文件用于读写。</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">rb+</td>
+<td align="center">以二进制格式打开一个文件用读写。文件指针将会放在文件开头。</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">wb+</td>
+<td align="center">以二进制格式打开一个文件用于读写。如果该文件已经存在则将其覆盖，如果该文件不存在则创建新的文件。</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">ab+</td>
+<td align="center">以二进制格式打开一个文件用于读写。如果文件已存在，文件指针将会放到文件的结尾。如果文件不存在，创建新的文件用于读写。</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="12-异常"><a href="#12-异常" class="headerlink" title="12 异常"></a>12 异常</h2><blockquote>
+<p>异常指的是在程序运行过程中发生的异常事件，通常是由外部问题（如硬件错误、输入错误）所导致的。在Java等面向对象的编程语言中异常属于对象。</p>
+<p>捕获异常：try:                                                                     #@可能出现异常的代码放在try中</p>
+<p>处理异常:except  捕获异常类型：                                  #@处理异常的代码放在except中</p>
+<p>try 可以嵌套</p>
+</blockquote>
+<p>异常处理的常用操作：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#捕获单个异常</span>
+<span class="token keyword">try</span><span class="token punctuation">:</span>
+    可能发生异常的代码块
+<span class="token keyword">except</span> 可能发生的异常类型 ：
+	若发生异常时执行的语句
+    
+<span class="token comment">#捕获多个异常</span>
+<span class="token keyword">try</span><span class="token punctuation">:</span>
+    可能发生异常的代码块
+<span class="token keyword">except</span> （异常<span class="token number">1</span>，异常<span class="token number">2</span>）：		<span class="token comment">#将可能出现的异常填写在小括号中</span>
+	若发生异常时执行的语句
+
+<span class="token comment">#捕获多个异常</span>
+<span class="token keyword">try</span><span class="token punctuation">:</span>
+    可能发生异常的代码块
+<span class="token keyword">except</span> （异常<span class="token number">1</span>，异常<span class="token number">2</span>）<span class="token keyword">as</span> result：			<span class="token comment">#result 错误信息</span>
+	若发生异常时执行的语句
+    <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>				<span class="token comment">#打印错误信息，错误信息以字符串形式被打印</span>
+
+<span class="token comment">#捕获通用异常</span>
+<span class="token keyword">try</span><span class="token punctuation">:</span>
+    可能发生异常的代码块
+<span class="token keyword">except</span> Exception <span class="token keyword">as</span> result：		<span class="token comment"># Exception可以承接任何异常，可以打印result错误信息，也可以不打印错误信息。</span>
+	若发生异常时执行的语句
+    <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+    
+<span class="token comment">#try------finally  finally:后的代码不论异常是否发生，都会执行</span>
+<span class="token keyword">try</span><span class="token punctuation">:</span>
+    可能发生异常的代码块
+<span class="token keyword">except</span> 可能发生的异常类型 ：
+	若发生异常时执行的语句
+<span class="token keyword">finally</span><span class="token punctuation">:</span>
+    不论是否异常都执行的代码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<hr>
+<h2 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h2><p>random.randint(起始值，结束值)       随机生成int型数</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">凡诚</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2019/03/11/python-ji-chu-yu-fa/">http://example.com/2019/03/11/python-ji-chu-yu-fa/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint polocy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">凡诚</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+    <div class="livere-card card" data-aos="fade-up">
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC81NzU4NC8zNDA0OA==">
+        <script type="text/javascript">
+            (function (d, s) {
+                let j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') {
+                    return;
+                }
+
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript。</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->
+</div>
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2019/03/11/pythonpc-shi-jian-huo-qu-b-zhan/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="爬虫(爬取b站)">
+                        
+                        <span class="card-title">爬虫(爬取b站)</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            爬虫一般指网络爬虫。 网络爬虫（又称为网页蜘蛛，网络机器人，在FOAF社区中间，更经常的称为网页追逐者），是一种按照一定的规则，自动地抓取万维网信息的程序或者脚本。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-03-11
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/python/" class="post-category">
+                                    python
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%88%AC%E8%99%AB/">
+                        <span class="chip bg-color">爬虫</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/03/11/pa-chong-ji-chu-zhi-shi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="爬虫基础知识">
+                        
+                        <span class="card-title">爬虫基础知识</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            爬虫一般指网络爬虫。 网络爬虫（又称为网页蜘蛛，网络机器人，在FOAF社区中间，更经常的称为网页追逐者），是一种按照一定的规则，自动地抓取万维网信息的程序或者脚本。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-03-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/python/" class="post-category">
+                                    python
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%88%AC%E8%99%AB/">
+                        <span class="chip bg-color">爬虫</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        font-size: 15px;
+        color: blue;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="2477330090"
+                   fixed='true'
+                   autoplay='false'
+                   theme='blue'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022</span>
+            
+            <span id="year">2022</span>
+            <a href="/about" target="_blank">凡诚</a>
+            &nbsp;&nbsp;<a href="https://hexo.io/" target="_blank"></a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">575.4k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2022";
+                    var startMonth = "11";
+                    var startDate = "7";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/fanshicheng" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2639144944@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2639144944" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2639144944" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+    <script type="text/javascript">
+        var OriginTitile=document.title,st;
+        document.addEventListener("visibilitychange",function(){
+            document.hidden?(document.title="(Ő∀Ő3)ノ",clearTimeout(st)):(document.title="ヽ(●-`Д´-)ノ欢迎回来",st=setTimeout(function(){document.title=OriginTitile},3e3))
+        })
+    </script>
+    <!-- <script src="/js/cursor.js"></script> -->
+    <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+        </script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i["DaoVoiceObject"] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            a.charset = "utf-8";
+            m.parentNode.insertBefore(a, m)
+        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
+            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
+        daovoice('init', {
+            app_id: "377cb7de"
+        });
+        daovoice('update');
+    </script>
+    
+
+	
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+    <!-- 冒泡 -->
+    
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+<script type="text/javascript" src="/js/fireworks.js"></script>
+
+
+</body>
+
+</html>

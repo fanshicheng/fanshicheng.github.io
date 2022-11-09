@@ -1,0 +1,1965 @@
+<!DOCTYPE HTML>
+<html lang="Chinese">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="jQuery基础, 博客">
+    <meta name="description" content="In me the tiger sniffs the rose.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>jQuery基础 | 凡诚</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+
+   <style>
+    body{
+       background-image: url(https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/comment_bg.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">凡诚</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>主页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>文章</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于我</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/about">
+          
+          <i class="fas fa-user-circle" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>我的信息</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/contact">
+          
+          <i class="fas fa-comments" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>留言板</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/friends">
+          
+          <i class="fas fa-address-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>友链</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/comment_bg.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">凡诚</div>
+        <div class="logo-desc">
+            
+            In me the tiger sniffs the rose.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			主页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			文章
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-user-circle"></i>
+			
+			关于我
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/about " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-user-circle" style="position: absolute;left:50px" ></i>
+			      
+		          <span>我的信息</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/contact " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-comments" style="position: absolute;left:50px" ></i>
+			      
+		          <span>留言板</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/friends " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-address-book" style="position: absolute;left:50px" ></i>
+			      
+		          <span>友链</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">jQuery基础</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/html/">
+                                <span class="chip bg-color">html</span>
+                            </a>
+                        
+                            <a href="/tags/javaScript/">
+                                <span class="chip bg-color">javaScript</span>
+                            </a>
+                        
+                            <a href="/tags/jQuery/">
+                                <span class="chip bg-color">jQuery</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/" class="post-category">
+                                前端技术
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2021-11-08
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-11-08
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    4.2k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    15 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h2><blockquote>
+<p>javascript库概念: 是一个封装好的特定的集合(方法和函数)，封装了很多预先定义好的函数。</p>
+<p>常见的javascript库：</p>
+<ul>
+<li>jQuery</li>
+<li>Prototype</li>
+<li>YUI</li>
+<li>Dojo</li>
+<li>Ext JS</li>
+<li>移动端的zepto</li>
+</ul>
+<p>这些库都是对原生javaScript的封装，内部都是用javaScript实现的。</p>
+</blockquote>
+<h3 id="jQuery概念"><a href="#jQuery概念" class="headerlink" title="jQuery概念"></a>jQuery概念</h3><blockquote>
+<p>jQuery是一个快速的，简介的javascript库，将js中的DOM操作做了封装，可以快速的查询使用里面的功能。</p>
+<p>jQuery封装了javaScript常用的代码，优化了DOM操作，时间处理，动画设计和Ajax交互。</p>
+</blockquote>
+<ul>
+<li>轻量级，核心文件才几十kb，不会影响页面加载的速度。</li>
+<li>跨浏览器兼容，基本兼容了现在主流的浏览器。</li>
+<li>链式编程，隐式迭代。</li>
+<li>对事件，样式，动画支持，大大简化了DOM操作。</li>
+<li>支持插件扩展开发，有着丰富的第三方的插件：树形菜单，日期控件，轮播图。</li>
+<li>免费开源。</li>
+</ul>
+<h3 id="jQuery入口函数"><a href="#jQuery入口函数" class="headerlink" title="jQuery入口函数"></a>jQuery入口函数</h3><blockquote>
+<p>可以设置入口函数，将script代码写在入口函数中，等待页面加载成功后再执行。</p>
+<p>方式一：</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">$</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+        <span class="token comment">//函数代码</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>方式二：</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+         <span class="token comment">//函数代码</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<ol>
+<li>等待dom结构渲染完毕即可以执行内部代码，不必等到所有外部资源加载完成。</li>
+<li>相当于原生js中的DOMContentLoaded。</li>
+<li>不同于原生js的load事件是等待页面文档，外部js文件，css文件，图片加载完成才执行内部代码。</li>
+</ol>
+</blockquote>
+<h4 id="jQuery顶级对象"><a href="#jQuery顶级对象" class="headerlink" title="jQuery顶级对象"></a>jQuery顶级对象</h4><blockquote>
+<p>$ 是jQuery的别称，在代码中可以使用jQuery代替  $ . </p>
+<p>$ 是jQuery的顶级对象，相当于原生的javaScript中的window，把元素利用  $ 包装成jQuery对象，就可以调用jQuery的方法。</p>
+</blockquote>
+<h4 id="dom对象和jQuery对象"><a href="#dom对象和jQuery对象" class="headerlink" title="dom对象和jQuery对象"></a>dom对象和jQuery对象</h4><blockquote>
+<ol>
+<li>dom对象：使用原生js获取过来的对象。</li>
+<li>jQuery对象：使用jQuery方式获取过来的对象就是jQuery对象，本质就是使用$把dom对象进行了包装。(是以数组的形式包装的)</li>
+<li>jQuery对象只能使用jQuery的方法，dom对象使用原生js的方法和属性。</li>
+</ol>
+</blockquote>
+<h4 id="jQuery和DOM对象的相互转换"><a href="#jQuery和DOM对象的相互转换" class="headerlink" title="jQuery和DOM对象的相互转换"></a>jQuery和DOM对象的相互转换</h4><blockquote>
+<p>因为原生js比jQuery更大，原生的一些属性和方法jQuery没有完全实现，要想使用这些属性和方法，需要把jQuery对象转换为DOM对象才能使用。</p>
+<ol>
+<li><p>DOM对象转换为jQuery对象： $(DOM对象)</p>
+<p><code>$(&#39;div&#39;);</code></p>
+</li>
+<li><p>jQuery对象转换为DOM对象:  jQuery对象[索引]  || jQuery对象.get(索引)</p>
+<p><code>$(&#39;div&#39;)[0]</code></p>
+</li>
+</ol>
+</blockquote>
+<h4 id="jQuery常用API"><a href="#jQuery常用API" class="headerlink" title="jQuery常用API"></a>jQuery常用API</h4><blockquote>
+<ul>
+<li>$(“选择器”).css()    //设置css属性</li>
+<li>$(“选择器”).事件名(function(){})   //设置事件监听</li>
+<li>$(“选择器”).show()     //显示元素</li>
+<li>$(“选择器”).hide()        //隐藏元素  </li>
+<li>$(this)       //获得当前元素</li>
+<li>$(this).index()   //获得当前元素的索引</li>
+<li>$(“选择器”).eq(索引)   //选择指定索引的元素</li>
+<li>$(“选择器”).hover(进入函数，离开函数);   //鼠标进入和离开触发相应的函数</li>
+<li>$(“选择器”).hover(函数)  //鼠标进入和离开都触发一次函数</li>
+<li>$(“选择器”).change(函数)   //当指定组件发生变化之后会执行指定的函数  </li>
+<li>toFixed(保留位数)   //设置指定数值的小数点后位数</li>
+</ul>
+</blockquote>
+<h4 id="jQuery-基础选择器"><a href="#jQuery-基础选择器" class="headerlink" title="jQuery 基础选择器"></a>jQuery 基础选择器</h4><blockquote>
+<p>原生JS获取方式很多，很杂且兼容性情况不一致，jQuery将选择器做了封装，使得获取元素统一标准。</p>
+<p>jQuery选择器拿取的元素以数组的方式放置到对象数组中。</p>
+</blockquote>
+<p>语法：</p>
+<p>$(  “选择器” )    //其中的选择器直接写css中的选择器，但是要加引号。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>用法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>id选择器</td>
+<td>$(“#id”)</td>
+<td>获取指定id元素</td>
+</tr>
+<tr>
+<td>全选择器</td>
+<td>$(“*”)</td>
+<td>匹配所有元素</td>
+</tr>
+<tr>
+<td>类选择器</td>
+<td>$(“.class”)</td>
+<td>获取只当class名元素</td>
+</tr>
+<tr>
+<td>标签选择器</td>
+<td>$(“div”)</td>
+<td>获取指定标签元素</td>
+</tr>
+<tr>
+<td>并集选择器</td>
+<td>$(“div,p”)</td>
+<td>获取多个元素</td>
+</tr>
+<tr>
+<td>交集选择器</td>
+<td>$(“div.classname”)</td>
+<td>交集元素</td>
+</tr>
+<tr>
+<td>子代选择器</td>
+<td>$(“div&gt;li”)</td>
+<td>获取直接子代元素</td>
+</tr>
+<tr>
+<td>后代选择器</td>
+<td>$(“ul li”)</td>
+<td>获取后代元素</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>语法</th>
+<th>用法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>:first</td>
+<td>$(“li:first”)</td>
+<td>获取第一个li元素</td>
+</tr>
+<tr>
+<td>:last</td>
+<td>$(“li:last”)</td>
+<td>获取最后一个li元素</td>
+</tr>
+<tr>
+<td>:eq(index)</td>
+<td>$(“eq(index)”)</td>
+<td>获取到的li元素中，选择索引号为2的，索引号从0开始</td>
+</tr>
+<tr>
+<td>:odd</td>
+<td>$(“li:odd”)</td>
+<td>获取到的li元素中，选择索引号为奇数的元素</td>
+</tr>
+<tr>
+<td>:even</td>
+<td>$(“li:even”)</td>
+<td>获取到的li元素中，选择索引号为偶数的元素</td>
+</tr>
+<tr>
+<td>:change</td>
+<td>$(“.chexbox:checked”)</td>
+<td>获得被选中的指定元素</td>
+</tr>
+</tbody></table>
+<h4 id="jQuery-筛选方法"><a href="#jQuery-筛选方法" class="headerlink" title="jQuery 筛选方法"></a>jQuery 筛选方法</h4><table>
+<thead>
+<tr>
+<th>语法</th>
+<th>用法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>parent()</td>
+<td>$(“li”).parent()</td>
+<td>查找直接父级</td>
+</tr>
+<tr>
+<td>parents()</td>
+<td>$(“li”).parents()</td>
+<td>查找所有父级</td>
+</tr>
+<tr>
+<td>children( selector )</td>
+<td>$(“ul”).children(“li”)</td>
+<td>查找直接子类，相当于$(ul&gt;li)</td>
+</tr>
+<tr>
+<td>find(selector)</td>
+<td>$(“ul”).find(“li”)</td>
+<td>相当于$(“ul li”)</td>
+</tr>
+<tr>
+<td>siblings([select])</td>
+<td>$(“.first”).siblings(“li”)</td>
+<td>查找兄弟节点，==不包含自己==</td>
+</tr>
+<tr>
+<td>nextAll( [expr] )</td>
+<td>$(“.first”).nextAll(“li”)</td>
+<td>查找当前元素之后所有的同辈元素</td>
+</tr>
+<tr>
+<td>prevrAll( [expr] )</td>
+<td>$(“.first”).prevrAll(“li”)</td>
+<td>查找当前元素之前的所有同辈元素</td>
+</tr>
+<tr>
+<td>hasClass( class )</td>
+<td>$(“div”).hasClass(“protected”)</td>
+<td>检擦当前元素是否含有某个特定的类</td>
+</tr>
+<tr>
+<td>eq( index )</td>
+<td>$(“li”).eq(2);</td>
+<td>相当于$(“li:eq(2)”),index从0开始</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h5 id="1-隐式迭代"><a href="#1-隐式迭代" class="headerlink" title="1.隐式迭代"></a>1.隐式迭代</h5><blockquote>
+<p>遍历内部DOM元素(伪数组形式储存)的过程叫做饮食迭代。</p>
+<p>给批评配到的所有元素及进行循环遍历，执行相应的方法，二不用我们进行循环，简化操作。</p>
+<p>当使用jquery选择器选择到多个标签时，调用jquery的方法，会自动进行迭代，将选择到的所有标签都执行对应的方法。</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">$<span class="token punctuation">(</span><span class="token string">"div"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"backgroud"</span><span class="token punctuation">,</span><span class="token string">"pink"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//将所有被选中的div标签都修改背景</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+</blockquote>
+<h5 id="筛选选择器"><a href="#筛选选择器" class="headerlink" title="筛选选择器"></a>筛选选择器</h5><table>
+<thead>
+<tr>
+<th>语法</th>
+<th>用法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>:first</td>
+<td>$(“li:frist”)</td>
+<td>获取第一个li元素</td>
+</tr>
+<tr>
+<td>:last</td>
+<td>$(“li:last”)</td>
+<td>获取最后一个li元素</td>
+</tr>
+<tr>
+<td>:eq(index)</td>
+<td>$(“li:eq(2)”)</td>
+<td>获取到的li元素中得到索引为2的，==索引从0开始==</td>
+</tr>
+<tr>
+<td>:odd</td>
+<td>$(“li:odd”)</td>
+<td>获取到的li元素中获取索引号为奇数的元素</td>
+</tr>
+<tr>
+<td>:event</td>
+<td>$(“li:event”)</td>
+<td>获取到的li元素中获取索引号为偶数的元素</td>
+</tr>
+</tbody></table>
+<h4 id="jQuery样式操作"><a href="#jQuery样式操作" class="headerlink" title="jQuery样式操作"></a>jQuery样式操作</h4><h5 id="操作css方法"><a href="#操作css方法" class="headerlink" title="操作css方法"></a>操作css方法</h5><blockquote>
+<p>jQuery 可以采用css方法来修改来修改元素样式，也可以操作类，修改多个样式。</p>
+<p>1.参数只写属性名，则是返回属性值</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"color"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">//获取当前元素的color属性</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</blockquote>
+<blockquote>
+<p>2.参数是属性名，属性值，使用逗号分割，是设置一组样式，属性必须加引号，属性值如果是数字可以不用加单位和引号。(可以使用变量名)</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"color"</span><span class="token punctuation">,</span><span class="token string">"red"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">//设置当前元素的color属性</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"height"</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</blockquote>
+<blockquote>
+<ol>
+<li>参数使用对象的形式，可以方便的设置多组样式，属性名和属性值使用冒号隔开，属性可以不用加引号。<ul>
+<li>如果是符合属性必须使用驼峰命名法</li>
+</ul>
+</li>
+</ol>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span>
+  		<span class="token literal-property property">height</span><span class="token operator">:</span><span class="token number">100</span><span class="token punctuation">,</span>
+         <span class="token literal-property property">width</span><span class="token operator">:</span><span class="token number">400</span>，
+  		<span class="token literal-property property">backgroundColor</span><span class="token operator">:</span><span class="token string">"red"</span><span class="token punctuation">;</span>
+           <span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<h5 id="设置类样式方法"><a href="#设置类样式方法" class="headerlink" title="设置类样式方法"></a>设置类样式方法</h5><blockquote>
+<p>作用等同于之前classList，可以操作类样式，注意操作类里面的参数不能加点。</p>
+<p>原生js中的className会覆盖原先里面的类名。</p>
+<p>jQuery里面类操作只是对指定类进行操作，不影响原先的类名。</p>
+<ul>
+<li><p>添加类    $(选择器).addClass(“类名”)</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"div"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addClass</span><span class="token punctuation">(</span><span class="token string">"className"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><p>删除类      $(选择器).removeClass(“类名”)</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"div"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">removeClass</span><span class="token punctuation">(</span><span class="token string">"className"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><p>切换类      $(选择器).removeClass(“类名”)</p>
+<ul>
+<li>如果有指定类名则删除，如果没有就添加</li>
+</ul>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"div"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toggleClass</span><span class="token punctuation">(</span><span class="token string">"className"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ul>
+</blockquote>
+<h4 id="jQuery效果"><a href="#jQuery效果" class="headerlink" title="jQuery效果"></a>jQuery效果</h4><blockquote>
+<p>jquery封装了许多动画效果：</p>
+<ul>
+<li>显示与隐藏：<ul>
+<li>show()</li>
+<li>hide()</li>
+<li>toggle()</li>
+</ul>
+</li>
+<li>滑动：<ul>
+<li>slideDown()</li>
+<li>slideUp()</li>
+<li>slideToggle()</li>
+</ul>
+</li>
+<li>淡入淡出<ul>
+<li>fadeln()</li>
+<li>fadeOut()</li>
+<li>fadeToggle()</li>
+<li>fadeTo()</li>
+</ul>
+</li>
+<li>自定义动画<ul>
+<li>animate()</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h4 id="jQuery效果—显示隐藏"><a href="#jQuery效果—显示隐藏" class="headerlink" title="jQuery效果—显示隐藏"></a>jQuery效果—显示隐藏</h4><h5 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h5><blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">jquery对象<span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span> <span class="token punctuation">[</span>速度<span class="token punctuation">,</span> <span class="token punctuation">[</span>切换效果<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>回调函数<span class="token punctuation">]</span> <span class="token punctuation">]</span> <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>显示参数</p>
+<ol>
+<li>参数都可以省略，无动画直接显示。</li>
+<li>速度：三种预定速度之一的字符串(slow,normal,fast)后者表示动画市场的毫秒数。</li>
+<li>切换效果： (Optional)用来指定切换效果，默认是 swing 可用参数linear。</li>
+<li>回调函数，在动画完成时执行的函数，每个元素执行一次。</li>
+</ol>
+</blockquote>
+<h5 id="隐藏"><a href="#隐藏" class="headerlink" title="隐藏"></a>隐藏</h5><blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">jquery对象<span class="token punctuation">.</span><span class="token function">hide</span><span class="token punctuation">(</span> <span class="token punctuation">[</span>速度<span class="token punctuation">,</span> <span class="token punctuation">[</span>切换效果<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>回调函数<span class="token punctuation">]</span> <span class="token punctuation">]</span> <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>隐藏参数</p>
+<ol>
+<li>参数都可以省略，无动画直接显示。</li>
+<li>速度：三种预定速度之一的字符串(slow,normal,fast)后者表示动画市场的毫秒数。</li>
+<li>切换效果： (Optional)用来指定切换效果，默认是 swing 可用参数linear。</li>
+<li>回调函数，在动画完成时执行的函数，每个元素执行一次</li>
+</ol>
+</blockquote>
+<h5 id="切换"><a href="#切换" class="headerlink" title="切换"></a>切换</h5><blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">jquery对象<span class="token punctuation">.</span><span class="token function">toggle</span><span class="token punctuation">(</span> <span class="token punctuation">[</span>速度<span class="token punctuation">,</span> <span class="token punctuation">[</span>切换效果<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>回调函数<span class="token punctuation">]</span> <span class="token punctuation">]</span> <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol>
+<li>参数都可以省略，无动画直接显示。</li>
+<li>速度：三种预定速度之一的字符串(slow,normal,fast)后者表示动画市场的毫秒数。</li>
+<li>切换效果： (Optional)用来指定切换效果，默认是 swing 可用参数linear。</li>
+<li>回调函数，在动画完成时执行的函数，每个元素执行一次。</li>
+<li>自动在隐藏和显示之间切换。</li>
+</ol>
+</blockquote>
+<h4 id="jQuery效果—滑动"><a href="#jQuery效果—滑动" class="headerlink" title="jQuery效果—滑动"></a>jQuery效果—滑动</h4><blockquote>
+<p>滑动设置元素的出现方式，首先将指定滑动元素隐藏，再在指定事件上设置滑动函数。</p>
+</blockquote>
+<h5 id="滑下"><a href="#滑下" class="headerlink" title="滑下"></a>滑下</h5><blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">jquery对象<span class="token punctuation">.</span><span class="token function">slideDown</span><span class="token punctuation">(</span> <span class="token punctuation">[</span>速度<span class="token punctuation">,</span> <span class="token punctuation">[</span>切换效果<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>回调函数<span class="token punctuation">]</span> <span class="token punctuation">]</span> <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol>
+<li>参数都可以省略，无动画直接显示。</li>
+<li>速度：三种预定速度之一的字符串(slow,normal,fast)后者表示动画市场的毫秒数。</li>
+<li>切换效果： (Optional)用来指定切换效果，默认是 swing 可用参数linear。</li>
+<li>回调函数，在动画完成时执行的函数，每个元素执行一次。</li>
+</ol>
+</blockquote>
+<h5 id="滑上"><a href="#滑上" class="headerlink" title="滑上"></a>滑上</h5><blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">jquery对象<span class="token punctuation">.</span><span class="token function">slideUp</span><span class="token punctuation">(</span> <span class="token punctuation">[</span>速度<span class="token punctuation">,</span> <span class="token punctuation">[</span>切换效果<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>回调函数<span class="token punctuation">]</span> <span class="token punctuation">]</span> <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol>
+<li>参数都可以省略，无动画直接显示。</li>
+<li>速度：三种预定速度之一的字符串(slow,normal,fast)后者表示动画市场的毫秒数。</li>
+<li>切换效果： (Optional)用来指定切换效果，默认是 swing 可用参数linear。</li>
+<li>回调函数，在动画完成时执行的函数，每个元素执行一次。</li>
+</ol>
+</blockquote>
+<h5 id="滑下-1"><a href="#滑下-1" class="headerlink" title="滑下"></a>滑下</h5><blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">jquery对象<span class="token punctuation">.</span><span class="token function">slideToggle</span><span class="token punctuation">(</span> <span class="token punctuation">[</span>速度<span class="token punctuation">,</span> <span class="token punctuation">[</span>切换效果<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>回调函数<span class="token punctuation">]</span> <span class="token punctuation">]</span> <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol>
+<li>参数都可以省略，无动画直接显示。</li>
+<li>速度：三种预定速度之一的字符串(slow,normal,fast)后者表示动画市场的毫秒数。</li>
+<li>切换效果： (Optional)用来指定切换效果，默认是 swing 可用参数linear。</li>
+<li>回调函数，在动画完成时执行的函数，每个元素执行一次。</li>
+</ol>
+</blockquote>
+<h4 id="jQuery效果—动画或效果队列"><a href="#jQuery效果—动画或效果队列" class="headerlink" title="jQuery效果—动画或效果队列"></a>jQuery效果—动画或效果队列</h4><blockquote>
+<p>动画或者效果一旦触发就会执行，如果多次触发，就会造成多个动画或者效果排队执行。</p>
+<p>停止排队：</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">jquery对象<span class="token punctuation">.</span><span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>stop()用于停止动画或者效果。stop()需要写到下一次动画执行前：</p>
+<p><code>jquery对象.stop().slideUp()</code></p>
+</blockquote>
+<h4 id="jQuery效果—淡入淡出"><a href="#jQuery效果—淡入淡出" class="headerlink" title="jQuery效果—淡入淡出"></a>jQuery效果—淡入淡出</h4><h5 id="淡入"><a href="#淡入" class="headerlink" title="淡入"></a>淡入</h5><blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">jquery对象<span class="token punctuation">.</span><span class="token function">fadeIn</span><span class="token punctuation">(</span> <span class="token punctuation">[</span>速度<span class="token punctuation">,</span> <span class="token punctuation">[</span>切换效果<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>回调函数<span class="token punctuation">]</span> <span class="token punctuation">]</span> <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol>
+<li>参数都可以省略，无动画直接显示。</li>
+<li>速度：三种预定速度之一的字符串(slow,normal,fast)后者表示动画市场的毫秒数。</li>
+<li>切换效果： (Optional)用来指定切换效果，默认是 swing 可用参数linear。</li>
+<li>回调函数，在动画完成时执行的函数，每个元素执行一次。</li>
+</ol>
+</blockquote>
+<h5 id="淡出"><a href="#淡出" class="headerlink" title="淡出"></a>淡出</h5><blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">jquery对象<span class="token punctuation">.</span><span class="token function">fadeOut</span><span class="token punctuation">(</span> <span class="token punctuation">[</span>速度<span class="token punctuation">,</span> <span class="token punctuation">[</span>切换效果<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>回调函数<span class="token punctuation">]</span> <span class="token punctuation">]</span> <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol>
+<li>参数都可以省略，无动画直接显示。</li>
+<li>速度：三种预定速度之一的字符串(slow,normal,fast)后者表示动画市场的毫秒数。</li>
+<li>切换效果： (Optional)用来指定切换效果，默认是 swing 可用参数linear。</li>
+<li>回调函数，在动画完成时执行的函数，每个元素执行一次。</li>
+</ol>
+</blockquote>
+<h5 id="切换-1"><a href="#切换-1" class="headerlink" title="切换"></a>切换</h5><blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">jquery对象<span class="token punctuation">.</span><span class="token function">fadeToggle</span><span class="token punctuation">(</span> <span class="token punctuation">[</span>速度<span class="token punctuation">,</span> <span class="token punctuation">[</span>切换效果<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>回调函数<span class="token punctuation">]</span> <span class="token punctuation">]</span> <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol>
+<li>参数都可以省略，无动画直接显示。</li>
+<li>速度：三种预定速度之一的字符串(slow,normal,fast)后者表示动画市场的毫秒数。</li>
+<li>切换效果： (Optional)用来指定切换效果，默认是 swing 可用参数linear。</li>
+<li>回调函数，在动画完成时执行的函数，每个元素执行一次。</li>
+</ol>
+</blockquote>
+<h5 id="调整透明度"><a href="#调整透明度" class="headerlink" title="调整透明度"></a>调整透明度</h5><blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">jquery对象<span class="token punctuation">.</span><span class="token function">fadeTo</span><span class="token punctuation">(</span> 速度<span class="token punctuation">,</span> 透明度<span class="token punctuation">,</span><span class="token punctuation">[</span>切换效果<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>回调函数<span class="token punctuation">]</span> <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol>
+<li>==透明度必须写==，在0 - 1之间。</li>
+<li>==速度必须写==：三种预定速度之一的字符串(slow,normal,fast)后者表示动画市场的毫秒数。</li>
+<li>切换效果： (Optional)用来指定切换效果，默认是 swing 可用参数linear。</li>
+<li>回调函数，在动画完成时执行的函数，每个元素执行一次。</li>
+</ol>
+</blockquote>
+<h4 id="jQuery效果—自定义动画"><a href="#jQuery效果—自定义动画" class="headerlink" title="jQuery效果—自定义动画"></a>jQuery效果—自定义动画</h4><blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">animate</span><span class="token punctuation">(</span>修改样式，速度，切换效果，回调函数<span class="token punctuation">)</span>；<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>1。 修改样式必须要写，以对象形式传递，属性名可以不用带引号，如果是符合属性则采用驼峰命名法。</p>
+<ol>
+<li>速度：三种预定速度之一的字符串(slow,normal,fast)后者表示动画市场的毫秒数。</li>
+<li>切换效果： (Optional)用来指定切换效果，默认是 swing 可用参数linear。</li>
+<li>回调函数，在动画完成时执行的函数，每个元素执行一次。</li>
+</ol>
+</blockquote>
+<h4 id="jQuery效果—属性操作"><a href="#jQuery效果—属性操作" class="headerlink" title="jQuery效果—属性操作"></a>jQuery效果—属性操作</h4><h5 id="固有属性"><a href="#固有属性" class="headerlink" title="固有属性"></a>固有属性</h5><blockquote>
+<p>jquery对象.prop(“属性名”)；  //获取元素固有属性值</p>
+<p>jquery对象.prop(“属性名“，”属性值“)；  //设置元素的固有属性值</p>
+</blockquote>
+<h5 id="自定义属性"><a href="#自定义属性" class="headerlink" title="自定义属性"></a>自定义属性</h5><blockquote>
+<p>jquery对象.attr(“属性名”)；  //获取元素自定义属性值</p>
+<p>jquery对象.attr(“属性名“，”属性值“)；  //设置元素的自定义属性值</p>
+</blockquote>
+<ul>
+<li>attr()方法可以获取html5的标准属性data-属性名,但是要填写完整的属性名才能获取对应的值.</li>
+</ul>
+<h5 id="数据缓存"><a href="#数据缓存" class="headerlink" title="数据缓存"></a>数据缓存</h5><blockquote>
+<p>data()方法可以在指定的元素上获取数据,并不会修改DOM元素结构,一旦页面刷新,之前存放的数据都将被移除.</p>
+<p>jquery对象.data(“属性值”,”属性名”);  //将数据存放在元素的内存中.</p>
+<p>jquery对象.data(“属性值”);   //获取指定元素中的数据. </p>
+</blockquote>
+<ul>
+<li>data()方法可以获取html5的标准属性data-属性名,只需要填写属性名就可以获取对应的值.</li>
+</ul>
+<h4 id="jQuery效果—内容文本值"><a href="#jQuery效果—内容文本值" class="headerlink" title="jQuery效果—内容文本值"></a>jQuery效果—内容文本值</h4><blockquote>
+<p>主要针对元素的内容和表单的值的操作。</p>
+</blockquote>
+<h5 id="普通元素内容-html"><a href="#普通元素内容-html" class="headerlink" title="普通元素内容 html()"></a>普通元素内容 html()</h5><blockquote>
+<p>相当于原生innerHTML元素。获取指定标签中的所有所有节点。</p>
+</blockquote>
+<blockquote>
+<p>$(“选择器”).html()     //获取元素的内容</p>
+<p>$(“选择器”).html(“元素内容”)     //设置元素的内容</p>
+</blockquote>
+<h5 id="普通元素文本内容-text"><a href="#普通元素文本内容-text" class="headerlink" title="普通元素文本内容 text()"></a>普通元素文本内容 text()</h5><blockquote>
+<p>相当于原生innerText，只获得指定标签中的文本节点。</p>
+</blockquote>
+<blockquote>
+<p>$(“选择器”).Text()     //获取元素的文本内容</p>
+<p>$(“选择器”).Text(“元素内容”)     //设置元素的文本内容</p>
+</blockquote>
+<h5 id="获得表单值-val"><a href="#获得表单值-val" class="headerlink" title="获得表单值 val()"></a>获得表单值 val()</h5><blockquote>
+<p>相当于原生value，获得指定标签的value属性的值</p>
+</blockquote>
+<blockquote>
+<p>$(“选择器”).val()     //获取元素value的值</p>
+<p>$(“选择器”).val(“元素内容”)     //设置元素的value的值</p>
+</blockquote>
+<h4 id="jQuery元素操作"><a href="#jQuery元素操作" class="headerlink" title="jQuery元素操作"></a>jQuery元素操作</h4><blockquote>
+<p>元素操作主要是 遍历，创建，添加，删除元素操作。</p>
+</blockquote>
+<blockquote>
+<p>jQuery 隐式迭代是对同一类元素做了同样的操作。如果想要给同一类元素做不同的操作，就需要使用遍历。</p>
+</blockquote>
+<h5 id="遍历："><a href="#遍历：" class="headerlink" title="遍历："></a>遍历：</h5><p>语法：</p>
+<blockquote>
+<p>$(“div”).each( function( index,domEle ){  } );</p>
+<ol>
+<li>each()方法遍历匹配的每一个元素，主要是用DOM处理。</li>
+<li>里面的回调函数有2个参数：index是每个元素的索引号，demEle是每个DOM元素对象==(不是jQuery对象)==。</li>
+<li>使用jQuery方法，需要将dom对象转换为jQuery对象。 $(dom对象)</li>
+</ol>
+</blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"div"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">each</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">index<span class="token punctuation">,</span>domEle</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+  	<span class="token comment">//index 获得当前索引号</span>
+  	<span class="token comment">//domELe  获得当前dom元素  $(domEle)</span>
+  
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>语法：</p>
+<blockquote>
+<p>$.each(object,function ( index,element ) );</p>
+<ol>
+<li>$.each()方法可以用于遍历任何对象，主要用于数据处理，比如数组，对象。</li>
+<li>函数中有两个参数，index是每个元素的索引号，element是遍历内容。</li>
+</ol>
+</blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//遍历元素对象</span>
+$<span class="token punctuation">.</span><span class="token function">each</span><span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"div"</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">index<span class="token punctuation">,</span>ele</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+  	<span class="token comment">//index 获得当前索引号</span>
+  	<span class="token comment">//ele  获得当前dom元素  $(domEle)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//遍历数组</span>
+<span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+$<span class="token punctuation">.</span><span class="token function">each</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">index<span class="token punctuation">,</span>ele</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+  	<span class="token comment">//index 获得当前索引号</span>
+  	<span class="token comment">//ele  获得当前dom元素  $(domEle)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//遍历对象</span>
+$<span class="token punctuation">.</span><span class="token function">each</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span><span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">"doubao"</span><span class="token punctuation">,</span><span class="token literal-property property">age</span><span class="token operator">:</span><span class="token number">18</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">i<span class="token punctuation">,</span>ele</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token comment">//index 获得当前属性名</span>
+  	<span class="token comment">//ele  获得当前属性值</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h5 id="创建："><a href="#创建：" class="headerlink" title="创建："></a>创建：</h5><p>语法：</p>
+<blockquote>
+<p>var li = $(“&lt;li&gt;&lt;\li&gt;”);</p>
+</blockquote>
+<h5 id="内部添加元素"><a href="#内部添加元素" class="headerlink" title="内部添加元素"></a>内部添加元素</h5><blockquote>
+<p>jQuery对象.append(元素)   //将指定元素添加到对象内的最后面</p>
+<p>jQuery对象.prepend(元素)  //将指定元素添加到对象内的最前面</p>
+</blockquote>
+<h5 id="外部添加元素"><a href="#外部添加元素" class="headerlink" title="外部添加元素"></a>外部添加元素</h5><blockquote>
+<p>jQuery对象.after(元素)    //将指定元素添加到 对象的前面</p>
+<p>jQuery对象.before(元素)    //将指定元素添加到 对象的后面</p>
+<ul>
+<li>内部添加元素，生成后，他们是父子关系</li>
+<li>外部添加元素，生成后，他们是兄弟关系</li>
+</ul>
+</blockquote>
+<h5 id="删除元素"><a href="#删除元素" class="headerlink" title="删除元素"></a>删除元素</h5><blockquote>
+<p>jQuery对象.remove();    //删除指定的元素对象</p>
+<p>jQuery对象.empty();       //清空匹配的元素集合中的所有子节点‘</p>
+<p>jQuery对象.html(“”);      //清空匹配元素的内容</p>
+</blockquote>
+<h4 id="jQuery尺寸，位置操作"><a href="#jQuery尺寸，位置操作" class="headerlink" title="jQuery尺寸，位置操作"></a>jQuery尺寸，位置操作</h4><blockquote>
+<p>可以通过jQuery获得尺寸。</p>
+<table>
+<thead>
+<tr>
+<th>语法</th>
+<th>用法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>width()/height()</td>
+<td>获取匹配元素的宽度和高度，只计算width/height</td>
+</tr>
+<tr>
+<td>innerWidth()/innerHeight()</td>
+<td>取得匹配元素宽度和高度，包含padding</td>
+</tr>
+<tr>
+<td>outerWidth()/outerHeight()</td>
+<td>取得匹配元素宽度和高度值，包含padding，border</td>
+</tr>
+<tr>
+<td>outerWidth(true)/outerHeiht(true)</td>
+<td>取得匹配元素宽度和高度，包含padding，borde，margin</td>
+</tr>
+</tbody></table>
+</blockquote>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">凡诚</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2021/11/08/jquery/">http://example.com/2021/11/08/jquery/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint polocy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">凡诚</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/html/">
+                                    <span class="chip bg-color">html</span>
+                                </a>
+                            
+                                <a href="/tags/javaScript/">
+                                    <span class="chip bg-color">javaScript</span>
+                                </a>
+                            
+                                <a href="/tags/jQuery/">
+                                    <span class="chip bg-color">jQuery</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+    <div class="livere-card card" data-aos="fade-up">
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC81NzU4NC8zNDA0OA==">
+        <script type="text/javascript">
+            (function (d, s) {
+                let j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') {
+                    return;
+                }
+
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript。</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->
+</div>
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2021/11/08/java-shu-ju-jie-gou/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="数据结构">
+                        
+                        <span class="card-title">数据结构</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            数据结构是计算机存储、组织数据的方式。数据结构是指相互之间存在一种或多种特定关系的数据元素的集合。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-08
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="post-category">
+                                    数据结构
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                        <span class="chip bg-color">数据结构</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/11/08/javaweb/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="javaWeb基础">
+                        
+                        <span class="card-title">javaWeb基础</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Java Web，是用Java技术来解决相关web互联网领域的技术栈。web包括：web服务端和web客户端两部分。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-08
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    后端技术
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
+                    </a>
+                    
+                    <a href="/tags/javaWeb/">
+                        <span class="chip bg-color">javaWeb</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        font-size: 15px;
+        color: blue;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="2477330090"
+                   fixed='true'
+                   autoplay='false'
+                   theme='blue'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022</span>
+            
+            <span id="year">2022</span>
+            <a href="/about" target="_blank">凡诚</a>
+            &nbsp;&nbsp;<a href="https://hexo.io/" target="_blank"></a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">575.4k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2022";
+                    var startMonth = "11";
+                    var startDate = "7";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/fanshicheng" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2639144944@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2639144944" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2639144944" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+    <script type="text/javascript">
+        var OriginTitile=document.title,st;
+        document.addEventListener("visibilitychange",function(){
+            document.hidden?(document.title="(Ő∀Ő3)ノ",clearTimeout(st)):(document.title="ヽ(●-`Д´-)ノ欢迎回来",st=setTimeout(function(){document.title=OriginTitile},3e3))
+        })
+    </script>
+    <!-- <script src="/js/cursor.js"></script> -->
+    <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+        </script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i["DaoVoiceObject"] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            a.charset = "utf-8";
+            m.parentNode.insertBefore(a, m)
+        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
+            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
+        daovoice('init', {
+            app_id: "377cb7de"
+        });
+        daovoice('update');
+    </script>
+    
+
+	
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+    <!-- 冒泡 -->
+    
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+<script type="text/javascript" src="/js/fireworks.js"></script>
+
+
+</body>
+
+</html>
