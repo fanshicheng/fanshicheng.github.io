@@ -432,7 +432,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-11-08
+                    2022-11-10
                 </div>
                 
 
@@ -469,112 +469,95 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="git基础"><a href="#git基础" class="headerlink" title="git基础"></a>git基础</h1><h2 id="1-下载配置"><a href="#1-下载配置" class="headerlink" title="1 下载配置"></a>1 下载配置</h2><blockquote>
-<p>配置个人的用户名称和电子邮件地址：</p>
-<pre class="line-numbers language-none"><code class="language-none">&gt;$ git config --global user.name &quot;runoob&quot;
-&gt;$ git config --global user.email test@runoob.com<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-</blockquote>
-<blockquote>
-<p>第一次拉取仓库代码时可能需要输入用户名的密码。</p>
-<p>使用后，下次拉取仓库代码会重新输入用户名和密码。</p>
-<pre class="line-numbers language-none"><code class="language-none">$ git config --system --unset credential.helper<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</blockquote>
+                <h1 id="git基础"><a href="#git基础" class="headerlink" title="git基础"></a>git基础</h1><h2 id="1-下载配置"><a href="#1-下载配置" class="headerlink" title="1 下载配置"></a>1 下载配置</h2><p> 配置个人的用户名称和电子邮件地址：</p>
+ <pre class="line-numbers language-none"><code class="language-none">$ git config --global user.name &quot;runoob&quot;
+$ git config --global user.email test@runoob.com<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>  第一次拉取仓库代码时可能需要输入用户名的密码。</p>
+<p>  使用后，下次拉取仓库代码会重新输入用户名和密码。</p>
+  <pre class="line-numbers language-none"><code class="language-none">$ git config --system --unset credential.helper<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <hr>
-<h2 id="2-基础控制命令"><a href="#2-基础控制命令" class="headerlink" title="2 基础控制命令"></a>2 基础控制命令</h2><blockquote>
-<pre class="line-numbers language-none"><code class="language-none">$ cd  路径     &#x2F;&#x2F;跳转到指定目录
+<h2 id="2-基础控制命令"><a href="#2-基础控制命令" class="headerlink" title="2 基础控制命令"></a>2 基础控制命令</h2>  <pre class="line-numbers language-none"><code class="language-none">$ cd  路径     &#x2F;&#x2F;跳转到指定目录
 $ cd ..        &#x2F;&#x2F;跳转到上一层目录
 $ cd &#x2F;		   &#x2F;&#x2F;跳转到根目录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<pre class="line-numbers language-none"><code class="language-none">$ ls           &#x2F;&#x2F;显示当前文件夹中所有项目，蓝色为文件夹，白色为应用<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</blockquote>
-<h2 id="3-git-init"><a href="#3-git-init" class="headerlink" title="3  git init"></a>3  git init</h2><blockquote>
-<p>建立仓库的第一步，使用<code>git init</code>命令。</p>
-<p>使用后会在<code>当前页面</code>生成.git文件，建立仓库。</p>
-<pre class="line-numbers language-none"><code class="language-none">$ git init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</blockquote>
+  <pre class="line-numbers language-none"><code class="language-none">$ ls           &#x2F;&#x2F;显示当前文件夹中所有项目，蓝色为文件夹，白色为应用<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h2 id="3-git-init"><a href="#3-git-init" class="headerlink" title="3  git init"></a>3  git init</h2><p>  建立仓库的第一步，使用<code>git init</code>命令。</p>
+<p>  使用后会在<code>当前页面</code>生成.git文件，建立仓库。</p>
+  <pre class="line-numbers language-none"><code class="language-none">$ git init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <hr>
-<h2 id="4-git-clone"><a href="#4-git-clone" class="headerlink" title="4 git clone"></a>4 git clone</h2><blockquote>
-<p><strong>git clone</strong> 拷贝一个 Git 仓库到本地，让自己能够查看该项目，或者进行修改。</p>
-<pre class="line-numbers language-none"><code class="language-none">$ git clone 项目路径			&#x2F;&#x2F;将指定项目从指定路径拉取到当前路径
-
+<h2 id="4-git-clone"><a href="#4-git-clone" class="headerlink" title="4 git clone"></a>4 git clone</h2><p>  <strong>git clone</strong> 拷贝一个 Git 仓库到本地，让自己能够查看该项目，或者进行修改。</p>
+  <pre class="line-numbers language-none"><code class="language-none">$ git clone 项目路径			&#x2F;&#x2F;将指定项目从指定路径拉取到当前路径
+ 
 &#x2F;&#x2F;默认情况下，Git 会按照你提供的 URL 所指向的项目的名称创建你的本地项目 &#x2F;&#x2F;目录。 通常就是该 URL 最后一个 &#x2F; 之后的项目名称。如果你想要一个不一样 &#x2F;&#x2F;的名字， 你可以在该命令后加上你想要的名称。
-
+ 
 $ git clone 项目路径 指定项目名   &#x2F;&#x2F;创建你的本地项目<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-</blockquote>
 <hr>
-<h2 id="5-git-add"><a href="#5-git-add" class="headerlink" title="5 git add"></a>5 git add</h2><blockquote>
-<p><strong>git add</strong> 命令可将该文件添加到暂存区。</p>
-<pre class="line-numbers language-none"><code class="language-none">$ git add [file1] [file2] ...  &#x2F;&#x2F;添加一个或多个文件到暂存区。
-
+<h2 id="5-git-add"><a href="#5-git-add" class="headerlink" title="5 git add"></a>5 git add</h2><p>  <strong>git add</strong> 命令可将该文件添加到暂存区。</p>
+  <pre class="line-numbers language-none"><code class="language-none">$ git add [file1] [file2] ...  &#x2F;&#x2F;添加一个或多个文件到暂存区。
+ 
 $ git add [dir]	&#x2F;&#x2F;添加指定目录到暂存区，包括子目录。
-
+ 
 $ git add .		&#x2F;&#x2F;添加当前目录二点所有文件到暂存区。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-</blockquote>
 <hr>
-<h2 id="6-git-status"><a href="#6-git-status" class="headerlink" title="6 git status"></a>6 git status</h2><blockquote>
-<p>git status 命令用于查看在你上次提交之后是否有对文件进行再次修改。</p>
-<pre class="line-numbers language-none"><code class="language-none">git status  &#x2F;&#x2F;查看在你上次提交之后是否有对文件进行再次修改。
-
+<h2 id="6-git-status"><a href="#6-git-status" class="headerlink" title="6 git status"></a>6 git status</h2><p>  git status 命令用于查看在你上次提交之后是否有对文件进行再次修改。</p>
+  <pre class="line-numbers language-none"><code class="language-none">git status  &#x2F;&#x2F;查看在你上次提交之后是否有对文件进行再次修改。
+ 
 git status -s &#x2F;&#x2F;使用 -s 参数来获得简短的输出结果.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-</blockquote>
+
 <hr>
-<h2 id="7-git-diff"><a href="#7-git-diff" class="headerlink" title="7 git diff"></a>7 git diff</h2><blockquote>
-<p>比较在暂存区和工作区的差异</p>
-</blockquote>
-<blockquote>
-<pre class="line-numbers language-none"><code class="language-none">$ git diff  &#x2F;&#x2F;比较文件的不同，即比较文件在暂存区和工作区的差异。
-
+<h2 id="7-git-diff"><a href="#7-git-diff" class="headerlink" title="7 git diff"></a>7 git diff</h2><p>  比较在暂存区和工作区的差异</p>
+  <pre class="line-numbers language-none"><code class="language-none">$ git diff  &#x2F;&#x2F;比较文件的不同，即比较文件在暂存区和工作区的差异。
+ 
 $ git diff --cached	 &#x2F;&#x2F;查看已缓存的改动
-
+ 
 $ git diff HEAD		&#x2F;&#x2F;查看已缓存的与未缓存的所有改动
 $git diff --stat	&#x2F;&#x2F;显示摘要而非整个 diff<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-</blockquote>
 <hr>
-<h2 id="8-git-commit"><a href="#8-git-commit" class="headerlink" title="8 git commit"></a>8 git commit</h2><blockquote>
-<p>git commit 命令将暂存区内容添加到本地仓库中。</p>
-<pre class="line-numbers language-none"><code class="language-none">$ git commit -m &#39;备注信息&#39; &#x2F;&#x2F;提交暂存区到本地仓库中。
-
+<h2 id="8-git-commit"><a href="#8-git-commit" class="headerlink" title="8 git commit"></a>8 git commit</h2><p>  git commit 命令将暂存区内容添加到本地仓库中。</p>
+  <pre class="line-numbers language-none"><code class="language-none">$ git commit -m &#39;备注信息&#39; &#x2F;&#x2F;提交暂存区到本地仓库中。
+ 
 $ git commit [file1] [file2] ... -m &#39;备注信息&#39;		&#x2F;&#x2F;提交暂存区的指定文件到仓库区
-
+ 
 $ git commit -a  &#x2F;&#x2F;-a 参数设置修改文件后不需要执行 git add 命令，直接来提交.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</blockquote>
+
 <hr>
-<h2 id="9-git-reset"><a href="#9-git-reset" class="headerlink" title="9 git reset"></a>9 git reset</h2><blockquote>
-<p>git reset 命令用于回退版本，可以指定退回某一次提交的版本。</p>
-<pre class="line-numbers language-none"><code class="language-none">git reset [--soft | --mixed | --hard] [HEAD]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</blockquote>
+<h2 id="9-git-reset"><a href="#9-git-reset" class="headerlink" title="9 git reset"></a>9 git reset</h2><p>  git reset 命令用于回退版本，可以指定退回某一次提交的版本。</p>
+  <pre class="line-numbers language-none"><code class="language-none">git reset [--soft | --mixed | --hard] [HEAD]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <p><strong>–mixed</strong> 为默认，可以不用带该参数，用于重置暂存区的文件与上一次的提交(commit)保持一致，工作区文件内容保持不变。</p>
 <pre class="line-numbers language-none"><code class="language-none">$ git reset --hard [commitID] <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>commitID使用git log或者git reflog查看</p>
-<h2 id="10-git-rm"><a href="#10-git-rm" class="headerlink" title="10 git rm"></a>10 git rm</h2><blockquote>
-<p><code>git rm</code> 命令用于删除文件。</p>
-<p>将文件从暂存区和工作区中删除：</p>
-<pre class="line-numbers language-none"><code class="language-none">$ git rm 文件名
-
+<h2 id="10-git-rm"><a href="#10-git-rm" class="headerlink" title="10 git rm"></a>10 git rm</h2><p>  <code>git rm</code> 命令用于删除文件。</p>
+<p>  将文件从暂存区和工作区中删除：</p>
+  <pre class="line-numbers language-none"><code class="language-none">$ git rm 文件名
+ 
 &#x2F;&#x2F;如果删除之前修改过并且已经放到暂存区域的话，则必须要用强制删除选项 -f。
 $ git rm -f 文件名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>文件从暂存区域移除,但仍然希望保留在当前工作目录中:</p>
-<pre class="line-numbers language-none"><code class="language-none">$ git rm --cached 文件名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>  文件从暂存区域移除,但仍然希望保留在当前工作目录中:</p>
+  <pre class="line-numbers language-none"><code class="language-none">$ git rm --cached 文件名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>递归删除，即如果后面跟的是一个目录做为参数，则会递归删除整个目录中的所有子目录和文件:</p>
-<pre class="line-numbers language-none"><code class="language-none">$ git rm –r * <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</blockquote>
+<p>  递归删除，即如果后面跟的是一个目录做为参数，则会递归删除整个目录中的所有子目录和文件:</p>
+  <pre class="line-numbers language-none"><code class="language-none">$ git rm –r * <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <hr>
-<h2 id="11-git-mv"><a href="#11-git-mv" class="headerlink" title="11 git mv"></a>11 git mv</h2><blockquote>
-<p>git mv 命令用于移动或重命名一个文件、目录或软连接。</p>
-<pre class="line-numbers language-none"><code class="language-none">$ git mv 文件名 新文件名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</blockquote>
-<h2 id="12-git-log"><a href="#12-git-log" class="headerlink" title="12 git log"></a>12 git log</h2><blockquote>
-<p>查看历史提交记录</p>
-<pre class="line-numbers language-none"><code class="language-none">$ git log	&#x2F;&#x2F;查看历史提交记录
+<h2 id="11-git-mv"><a href="#11-git-mv" class="headerlink" title="11 git mv"></a>11 git mv</h2><p>  git mv 命令用于移动或重命名一个文件、目录或软连接。</p>
+  <pre class="line-numbers language-none"><code class="language-none">$ git mv 文件名 新文件名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h2 id="12-git-log"><a href="#12-git-log" class="headerlink" title="12 git log"></a>12 git log</h2><p>  查看历史提交记录</p>
+  <pre class="line-numbers language-none"><code class="language-none">$ git log	&#x2F;&#x2F;查看历史提交记录
 
 $ git log --oneline &#x2F;&#x2F;--oneline 选项来查看历史记录的简洁的版本.
 
@@ -583,63 +566,53 @@ $ git log --graph  &#x2F;&#x2F;--graph 选项，以图的形式显示
 $ git log --reverse	&#x2F;&#x2F;--reverse 参数来逆向显示所有日志
 
 $git log --pretty&#x3D;oneline --all --graph --abbrev-commit  &#x2F;&#x2F;常用<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</blockquote>
+
 <hr>
-<h2 id="13-git-blame"><a href="#13-git-blame" class="headerlink" title="13 git blame"></a>13 git blame</h2><blockquote>
-<p>以列表形式显示修改记录</p>
-<pre class="line-numbers language-none"><code class="language-none">$ git blame 文件名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</blockquote>
+<h2 id="13-git-blame"><a href="#13-git-blame" class="headerlink" title="13 git blame"></a>13 git blame</h2><p>  以列表形式显示修改记录</p>
+  <pre class="line-numbers language-none"><code class="language-none">$ git blame 文件名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <hr>
-<h2 id="14-git-remote"><a href="#14-git-remote" class="headerlink" title="14 git remote"></a>14 git remote</h2><blockquote>
-<p><strong>git remote</strong> 命令用在远程仓库的操作</p>
-<pre class="line-numbers language-none"><code class="language-none">&gt;&#x2F;&#x2F;显示所有远程仓库
-&gt;$ git remote -v
+<h2 id="14-git-remote"><a href="#14-git-remote" class="headerlink" title="14 git remote"></a>14 git remote</h2><p> <strong>git remote</strong> 命令用在远程仓库的操作</p>
+ <pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;显示所有远程仓库
+$ git remote -v
 
-&gt;&#x2F;&#x2F;显示某个远程仓库的信息
-&gt;$ git remote show url 
+&#x2F;&#x2F;显示某个远程仓库的信息
+$ git remote show url 
 
-&gt;&#x2F;&#x2F;添加远程版本库
-&gt;$ git remote add 仓库别名 url
+&#x2F;&#x2F;添加远程版本库
+$ git remote add 仓库别名 url
 
-&gt;&#x2F;&#x2F;删除远程仓库
-&gt;$ git remote rm 仓库名  
+&#x2F;&#x2F;删除远程仓库
+$ git remote rm 仓库名  
 
-&gt;&#x2F;&#x2F; 修改仓库名
-&gt;$ git remote rename 旧名 新名  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#x2F;&#x2F; 修改仓库名
+$ git remote rename 旧名 新名  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-</blockquote>
 <hr>
-<h2 id="15-git-fech"><a href="#15-git-fech" class="headerlink" title="15 git fech"></a>15 git fech</h2><blockquote>
-<p><strong>git fetch</strong> 命令用于从远程获取代码库。</p>
-<pre class="line-numbers language-none"><code class="language-none">
-&gt;&#x2F;&#x2F;该命令就是在执行 git fetch 之后紧接着执行 git merge 远程分支到你所在的任意分支。
-&gt;$ git fetch 仓库别名
+<h2 id="15-git-fech"><a href="#15-git-fech" class="headerlink" title="15 git fech"></a>15 git fech</h2><p> <strong>git fetch</strong> 命令用于从远程获取代码库。</p>
+ <pre class="line-numbers language-none"><code class="language-none">
+&#x2F;&#x2F;该命令就是在执行 git fetch 之后紧接着执行 git merge 远程分支到你所在的任意分支。
+$ git fetch 仓库别名
 
-&gt;&#x2F;&#x2F;远程分支到你所在的任意分支
-&gt;git merge 仓库别名&#x2F;分支名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#x2F;&#x2F;远程分支到你所在的任意分支
+git merge 仓库别名&#x2F;分支名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-</blockquote>
 <hr>
-<h2 id="16-git-pull"><a href="#16-git-pull" class="headerlink" title="16 git pull"></a>16 git pull</h2><blockquote>
-<p><strong>git pull</strong> 命令用于从远程获取代码并合并本地的版本。</p>
-<p><strong>git pull</strong> 其实就是 <strong>git fetch</strong> 和 <strong>git merge FETCH_HEAD</strong> 的简写。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;更新操作
+<h2 id="16-git-pull"><a href="#16-git-pull" class="headerlink" title="16 git pull"></a>16 git pull</h2><p>  <strong>git pull</strong> 命令用于从远程获取代码并合并本地的版本。</p>
+<p>  <strong>git pull</strong> 其实就是 <strong>git fetch</strong> 和 <strong>git merge FETCH_HEAD</strong> 的简写。</p>
+  <pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;更新操作
 $ git pull
 $ git pull origin
-
+ 
 &#x2F;&#x2F;将远程主机 origin 的 master 分支拉取过来，与本地的 brantest 分支合并
 $ git pull origin master:brantest
-
+ 
 &#x2F;&#x2F;如果远程分支是与当前分支合并，则冒号后面的部分可以省略
 git pull origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-</blockquote>
 <hr>
-<h2 id="17-git-branch"><a href="#17-git-branch" class="headerlink" title="17 git branch"></a>17 git branch</h2><blockquote>
-<p>几乎每一种版本控制系统都以某种形式支持分支。使用分支意味着你可以从开发主线上分离开来，然后在不影响主线的同时继续工作。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;新建分支
+<h2 id="17-git-branch"><a href="#17-git-branch" class="headerlink" title="17 git branch"></a>17 git branch</h2><p>  几乎每一种版本控制系统都以某种形式支持分支。使用分支意味着你可以从开发主线上分离开来，然后在不影响主线的同时继续工作。</p>
+  <pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;新建分支
 $ git branch 新分支名
 
 &#x2F;&#x2F;查看本地所有分支
@@ -648,33 +621,27 @@ $ git branch
 &#x2F;&#x2F;删除分支
 $ git branch -d 分支名   &#x2F;&#x2F;删除分支，在删除之前需要做各种检查
 $ git branch -D 分支名    &#x2F;&#x2F;删除分支，不做任何检查直接删除<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</blockquote>
+
 <hr>
-<h2 id="18-git-checkout"><a href="#18-git-checkout" class="headerlink" title="18 git checkout"></a>18 git checkout</h2><blockquote>
-<p>切换分支命令</p>
-<pre class="line-numbers language-none"><code class="language-none">$ git checkout 分支名
+<h2 id="18-git-checkout"><a href="#18-git-checkout" class="headerlink" title="18 git checkout"></a>18 git checkout</h2><p>  切换分支命令</p>
+  <pre class="line-numbers language-none"><code class="language-none">$ git checkout 分支名
 $ git checkout -b 分支名  &#x2F;&#x2F;创建分支并且切换<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-</blockquote>
+
 <hr>
-<h2 id="19-git-merge"><a href="#19-git-merge" class="headerlink" title="19 git merge"></a>19 git merge</h2><blockquote>
-<p>使用以下命令将任何分支合并到<code>当前分支</code>中去：</p>
-<pre class="line-numbers language-none"><code class="language-none">$ git merge  分支名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</blockquote>
+<h2 id="19-git-merge"><a href="#19-git-merge" class="headerlink" title="19 git merge"></a>19 git merge</h2><p>  使用以下命令将任何分支合并到<code>当前分支</code>中去：</p>
+  <pre class="line-numbers language-none"><code class="language-none">$ git merge  分支名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <hr>
-<h2 id="20-git-push"><a href="#20-git-push" class="headerlink" title="20 git push"></a>20 git push</h2><blockquote>
-<p>使用git push 命令进行文件的上传</p>
-<pre class="line-numbers language-git" data-language="git"><code class="language-git">git push  [远端名称 [本地分支名][:远端分支名] ]
+<h2 id="20-git-push"><a href="#20-git-push" class="headerlink" title="20 git push"></a>20 git push</h2><p>  使用git push 命令进行文件的上传</p>
+  <pre class="line-numbers language-git" data-language="git"><code class="language-git">git push  [远端名称 [本地分支名][:远端分支名] ]
 git push [-f] [--set-upstream] [远端名称 [本地分支名][:远端分支名] ]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-</blockquote>
-<h2 id="21-git-reflog"><a href="#21-git-reflog" class="headerlink" title="21 git reflog"></a>21 git reflog</h2><blockquote>
-<p>查看以及删除的提交记录</p>
-<pre class="line-numbers language-git" data-language="git"><code class="language-git">git reflog<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
-</blockquote>
-<h1 id="git-推送整体流程"><a href="#git-推送整体流程" class="headerlink" title="git 推送整体流程"></a>git 推送整体流程</h1><h2 id="1-配置全局选项"><a href="#1-配置全局选项" class="headerlink" title="1. 配置全局选项"></a>1. 配置全局选项</h2><blockquote>
-<p>如果是第一次利用git，需要配置全局选项。</p>
-</blockquote>
+
+<h2 id="21-git-reflog"><a href="#21-git-reflog" class="headerlink" title="21 git reflog"></a>21 git reflog</h2><p>  查看以及删除的提交记录</p>
+  <pre class="line-numbers language-git" data-language="git"><code class="language-git">git reflog<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h1 id="git-推送整体流程"><a href="#git-推送整体流程" class="headerlink" title="git 推送整体流程"></a>git 推送整体流程</h1><h2 id="1-配置全局选项"><a href="#1-配置全局选项" class="headerlink" title="1. 配置全局选项"></a>1. 配置全局选项</h2><p>  如果是第一次利用git，需要配置全局选项。</p>
 <pre class="line-numbers language-git" data-language="git"><code class="language-git">git config --global user.name  <span class="token string">"用户名"</span>
 git config --global user.email  <span class="token string">"邮箱地址"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
@@ -1272,7 +1239,7 @@ git config --global user.email  <span class="token string">"邮箱地址"</span>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">575.4k</span>&nbsp;字
+                class="white-color">614.6k</span>&nbsp;字
             
             
             

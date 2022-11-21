@@ -436,14 +436,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-11-08
+                    2022-11-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    3.2k
+                    3.3k
                 </div>
                 
 
@@ -642,49 +642,40 @@
 
 <h3 id="4-列表样式"><a href="#4-列表样式" class="headerlink" title="4. 列表样式"></a>4. 列表样式</h3><blockquote>
 <p>html中列表分为三种</p>
-<ul>
-<li><p>无序列表： </p>
-<ul>
-<li>```html<pre class="line-numbers language-none"><code class="language-none"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<ul>
-  <li></li>
-</ul>
-<pre class="line-numbers language-none"><code class="language-none">
-* 有序列表
-
-  * &#96;&#96;&#96;html
-    <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ol>
-  <li></li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">
-* 自定义列表
-
-  * &#96;&#96;&#96;html
- <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<dl>
-      <dt>1</dt>
-      <dd></dd>
-      <dt>2</dt>
-      <dd></dd>
-</dl
-<pre class="line-numbers language-none"><code class="language-none">
-
-
-#### 4.1 去点列表
-
-使用class&#x3D;“list-unstyle”  去除列表的装饰元素
-
-&#96;&#96;&#96;html
-&lt;ul class&#x3D;&quot;list-unstyled&quot;&gt;
-           &lt;li&gt;第一项&lt;&#x2F;li&gt;
-           &lt;li&gt;第二项&lt;&#x2F;li&gt;
-           &lt;li&gt;第三项&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-</ul>
-</li>
-</ul>
 </blockquote>
+<p>无序列表： </p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>有序列表</li>
+</ul>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>自定义列表</li>
+</ul>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dl</span><span class="token punctuation">></span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">></span></span>1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">></span></span>2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dl</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="4-1-去点列表"><a href="#4-1-去点列表" class="headerlink" title="4.1 去点列表"></a>4.1 去点列表</h4><blockquote>
+<p>使用class=“list-unstyle”  去除列表的装饰元素</p>
+</blockquote>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>list-unstyled<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>第一项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>第二项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>第三项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 <h4 id="4-2-内联列表"><a href="#4-2-内联列表" class="headerlink" title="4.2 内联列表"></a>4.2 内联列表</h4><blockquote>
 <p>class=”list-inline” ,把垂直列表换成水平列表，而且去掉项目符号，也可以说内联链表即使为了制作水平导航而生。</p>
 </blockquote>
@@ -1323,6 +1314,10 @@
                         <span class="chip bg-color">html</span>
                     </a>
                     
+                    <a href="/tags/layUI/">
+                        <span class="chip bg-color">layUI</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1568,7 +1563,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">575.4k</span>&nbsp;字
+                class="white-color">614.6k</span>&nbsp;字
             
             
             

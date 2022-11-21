@@ -436,7 +436,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-11-08
+                    2022-11-10
                 </div>
                 
 
@@ -526,7 +526,7 @@ mvn install #安装到本地仓库<span aria-hidden="true" class="line-numbers-r
       		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>org.apache.tomcat.maven<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span> 
       		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>tomcat7-maven-plugin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span> 				
       		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>2.1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>configuration</span><span class="token punctuation">></span></span>
+		    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>configuration</span><span class="token punctuation">></span></span>
 			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>port</span><span class="token punctuation">></span></span>80<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>port</span><span class="token punctuation">></span></span>
 			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span><span class="token punctuation">></span></span>/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">></span></span> 
       		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>configuration</span><span class="token punctuation">></span></span>
@@ -540,7 +540,6 @@ mvn install #安装到本地仓库<span aria-hidden="true" class="line-numbers-r
 <p>Maven项目对象模型(POM)，可以通过一小段描述信息来管理项目的构建，报告和文档的项目管理工具软件。</p>
 <p>Maven 除了以程序构建能力为特色之外，还提供高级项目管理工具。由于 Maven 的缺省构建规则有较高的可重用性，所以常常用两三行 Maven 构建脚本就可以构建简单的项目。由于 Maven 的面向项目的方法，许多 Apache Jakarta 项目发文时使用 Maven，而且公司项目采用 Maven 的比例在持续增长。</p>
 </blockquote>
-<blockquote>
 <p>基本命令</p>
 <ol>
 <li>mvn compile ： 编译</li>
@@ -549,11 +548,11 @@ mvn install #安装到本地仓库<span aria-hidden="true" class="line-numbers-r
 <li>mvn package ： 打包</li>
 <li>mvn install：安装</li>
 </ol>
-</blockquote>
-<h3 id="maven生命周期"><a href="#maven生命周期" class="headerlink" title="maven生命周期"></a>maven生命周期</h3><blockquote>
-<ul>
-<li>Maven构建生命周期描述的是一次构建过程经历的事件。</li>
-<li>Maven对项目构建的 生命周期划分为三套。<ol>
+<h3 id="maven生命周期"><a href="#maven生命周期" class="headerlink" title="maven生命周期"></a>maven生命周期</h3><ul>
+<li><p>Maven构建生命周期描述的是一次构建过程经历的事件。</p>
+</li>
+<li><p>Maven对项目构建的 生命周期划分为三套。</p>
+<ol>
 <li>clean ： 清理工作<ul>
 <li>pre-clean</li>
 <li>clean</li>
@@ -575,10 +574,8 @@ mvn install #安装到本地仓库<span aria-hidden="true" class="line-numbers-r
 </li>
 </ol>
 </li>
-</ul>
-</blockquote>
-<ul>
-<li>同一生命周期内，执行后面的命令，前面的所有命令会自动执行。</li>
+<li><p>同一生命周期内，执行后面的命令，前面的所有命令会自动执行。</p>
+</li>
 </ul>
 <h3 id="maven坐标"><a href="#maven坐标" class="headerlink" title="maven坐标"></a>maven坐标</h3><blockquote>
 <p>Maven中坐标是资源的唯一标识。</p>
@@ -685,7 +682,7 @@ mvn install #安装到本地仓库<span aria-hidden="true" class="line-numbers-r
 </tbody></table>
 <h2 id="依赖管理"><a href="#依赖管理" class="headerlink" title="依赖管理"></a>依赖管理</h2><ol>
 <li><p>依赖配置</p>
-<p>依赖指的是当前项目运行所需要的jar，一个项目可以设置多个依赖<br>格式：</p>
+<p>依赖指的是当前项目运行所需要的jar包，一个项目可以设置多个依赖<br>格式：</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token comment">&lt;!--设置当前项目所依赖的所有jar--></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependencies</span><span class="token punctuation">></span></span>
   <span class="token comment">&lt;!--设置具体的依赖--></span>
@@ -767,8 +764,8 @@ mvn install #安装到本地仓库<span aria-hidden="true" class="line-numbers-r
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>modules</span><span class="token punctuation">></span></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>注意：参与聚合操作的模块最终执行顺序与模块间的依赖关系有关，与配置顺序无关</p>
-<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>作用：通过继承可以实现在子工程中沿用父工程中的配置（与Java类似）<br>制作方式：在子工程中生命其父工程坐标与对应的位置</p>
+<p>注意：==参与聚合操作的模块最终执行顺序与模块间的依赖关系有关，与配置顺序无关==</p>
+<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>作用：通过继承可以实现在子工程中沿用父工程中的配置（与Java类似）<br>制作方式：在子工程中声明其父工程坐标与对应的位置</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token comment">&lt;!--定义该工程的父工程--></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>parent</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
@@ -809,7 +806,7 @@ mvn install #安装到本地仓库<span aria-hidden="true" class="line-numbers-r
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token comment">&lt;!--定义自定义属性--></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>properties</span><span class="token punctuation">></span></span> 
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>spring.version</span><span class="token punctuation">></span></span>5.1.9.RELEASE<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>spring.version</span><span class="token punctuation">></span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>junit.version</span><span class="token punctuation">></span></span>4.12<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>junit.version</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>junit.version</span><span class="token punctuation">></span></span>4.12<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>junit.version</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>properties</span><span class="token punctuation">></span></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
@@ -1446,7 +1443,7 @@ $&#123;version&#125;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">575.4k</span>&nbsp;字
+                class="white-color">614.6k</span>&nbsp;字
             
             
             
